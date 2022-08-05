@@ -230,5 +230,8 @@
   "bugs": {
     "url": "https://github.com/theseda2s/flo-music/issues"
   },
-  "homepage": "https://github.com/theseda2s/flo-music#readme"
+  "homepage": "https://github.com/theseda2s/flo-music#readme",
+  "devDependencies": {
+    "sass-lint": "^1.13.1"
+  }
 }

@@ -1,3 +1,4 @@
-p {
-  color: white;
-}
+@import './constants/colors';
+
+@import './base/normalize';
+@import './base/reset';

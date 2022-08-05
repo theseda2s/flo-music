@@ -1,0 +1,30 @@
+@mixin text-style-12() {
+  font-size: $font-size-12;
+}
+
+@mixin text-style-13() {
+  font-size: $font-size-13;
+}
+
+@mixin text-style-14() {
+  font-size: $font-size-14;
+  line-height: $line-height-14;
+}
+
+@mixin text-style-15() {
+  font-size: $font-size-15;
+}
+
+@mixin text-style-16() {
+  font-size: $font-size-16;
+  line-height: $line-height-16;
+}
+
+@mixin text-style-22() {
+  font-size: $font-size-22;
+}
+
+@mixin text-style-28() {
+  font-size: $font-size-28;
+  line-height: $line-height-28;
+}

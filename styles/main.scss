@@ -4,11 +4,13 @@
 
 @import './base/normalize';
 @import './base/reset';
-@import './base/icons';
 
 @import './mixin/text-style';
 @import './mixin/responsive';
 @import './mixin/positions';
 @import './mixin/flexbox';
+
+@import './modules/icons';
+@import './modules/tags';
 
 @import './layouts/grid';

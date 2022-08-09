@@ -1,0 +1,98 @@
+@mixin setIcon($x, $y) {
+  background-image: url('../assets/icon/icons-01.png');
+  background-position: $x $y;
+}
+
+.ic-search {
+  @include setIcon(-242px, -632px);
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+
+.btn-play-type-1 {
+  @include setIcon(-119px, -208px);
+  width: 54px;
+  height: 54px;
+
+  &:hover {
+    background-position: -60px -208px;
+  }
+}
+
+.btn-paging-arrow {
+  width: 55px;
+  height: 55px;
+}
+
+.btn-paging-arrow.prev {
+  @include setIcon(-248px, -60px);
+
+  &:hover {
+    background-position: -248px 0;
+  }
+}
+
+.btn-paging-arrow.next {
+  @include setIcon(0, -208px);
+
+  &:hover {
+    background-position: -248px -120px;
+  }
+}
+
+.btn-swiper {
+  width: 16px;
+  height: 16px;
+}
+
+.btn-swiper.prev {
+  @include setIcon(-126px, -636px);
+
+  &:hover {
+    background-position: -96px -636px;
+  }
+
+  &:disabled {
+    background-position: -68px -636px;
+  }
+}
+
+.btn-swiper.next {
+  @include setIcon(-215px, -636px);
+
+  &:hover {
+    background-position: -185px -636px;
+  }
+
+  &:disabled {
+    background-position: -155px -636px;
+  }
+}
+
+.album-item__thumbnail__play {
+  @include setIcon(-178px, -105px);
+  width: 32px;
+  height: 32px;
+
+  &:hover {
+    background-position: -141px -105px;
+  }
+}
+
+.ic-link {
+  @include setIcon(-100px, -693px);
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+}
+
+.btn-add-list {
+  @include setIcon(-467px, -230px);
+  width: 41px;
+  height: 41px;
+
+  &:hover {
+    background-position: -467px -184px;
+  }
+}

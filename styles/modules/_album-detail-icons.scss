@@ -1,0 +1,63 @@
+.btn-add-playlist {
+  @include setIcon(-368px, -380px);
+  width: 41px;
+  height: 41px;
+
+  &:hover {
+    background-position: -322px -380px;
+  }
+}
+
+.btn-like {
+  @include setIcon(-421px, -138px);
+  width: 41px;
+  height: 41px;
+
+  &.active {
+    background-position: -421px -230px;
+  }
+
+  &:hover {
+    background-position: -421px -92px;
+  }
+}
+
+.btn-listen {
+  @include setIcon(-467px, -92px);
+  width: 41px;
+  height: 41px;
+
+  &:hover {
+    background-position: -467px -46px;
+  }
+}
+
+.btn-more {
+  @include setIcon(-184px, -380px);
+  width: 41px;
+  height: 41px;
+
+  &:hover {
+    background-position: -138px -380px;
+  }
+}
+
+.btn-allplay {
+  @include setIcon(-697px, -132px);
+  width: 17px;
+  height: 17px;
+
+  &:hover {
+    background-position: -697px -110px;
+  }
+}
+
+.btn-check-square {
+  @include setIcon(-450px, -691px);
+  width: 12px;
+  height: 12px;
+
+  &:checked {
+    background-position: -535px -691px;
+  }
+}

@@ -1,0 +1,174 @@
+@mixin bg-01($x, $y) {
+  background-image: url('../assets/icon/icons-01.png');
+  background-position: $x $y;
+}
+
+@mixin bg-02($x, $y) {
+  background-image: url('../assets/icon/icons-02.png');
+  background-position: $x $y;
+}
+
+.ic-search {
+  @include bg-01(-242px, -632px);
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+
+.btn-play-type-1 {
+  @include bg-01(-119px, -208px);
+  width: 54px;
+  height: 54px;
+
+  &:hover {
+    background-position: -60px -208px;
+  }
+}
+
+.btn-paging-arrow {
+  width: 55px;
+  height: 55px;
+}
+
+.btn-paging-arrow.prev {
+  @include bg-01(-248px, -60px);
+
+  &:hover {
+    background-position: -248px 0;
+  }
+}
+
+.btn-paging-arrow.next {
+  @include bg-01(0, -208px);
+
+  &:hover {
+    background-position: -248px -120px;
+  }
+}
+
+.btn-swiper {
+  width: 16px;
+  height: 16px;
+}
+
+.btn-swiper.prev {
+  @include bg-01(-126px, -636px);
+
+  &:hover {
+    background-position: -96px -636px;
+  }
+
+  &:disabled {
+    background-position: -68px -636px;
+  }
+}
+
+.btn-swiper.next {
+  @include bg-01(-215px, -636px);
+
+  &:hover {
+    background-position: -185px -636px;
+  }
+
+  &:disabled {
+    background-position: -155px -636px;
+  }
+}
+
+.album-item__thumbnail__play {
+  @include bg-01(-178px, -105px);
+  width: 32px;
+  height: 32px;
+
+  &:hover {
+    background-position: -141px -105px;
+  }
+}
+
+.ic-link {
+  @include bg-01(-100px, -693px);
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+}
+
+.btn-add-list {
+  @include bg-01(-467px, -230px);
+  width: 41px;
+  height: 41px;
+
+  &:hover {
+    background-position: -467px -184px;
+  }
+}
+
+.btn-add-playlist {
+  @include bg-01(-368px, -380px);
+  width: 41px;
+  height: 41px;
+
+  &:hover {
+    background-position: -322px -380px;
+  }
+}
+
+.btn-like {
+  @include bg-01(-421px, -138px);
+  width: 41px;
+  height: 41px;
+
+  &.active {
+    background-position: -421px -230px;
+  }
+
+  &:hover {
+    background-position: -421px -92px;
+  }
+}
+
+.btn-listen {
+  @include bg-01(-467px, -92px);
+  width: 41px;
+  height: 41px;
+
+  &:hover {
+    background-position: -467px -46px;
+  }
+}
+
+.btn-more {
+  @include bg-01(-184px, -380px);
+  width: 41px;
+  height: 41px;
+
+  &:hover {
+    background-position: -138px -380px;
+  }
+}
+
+.btn-allplay {
+  @include bg-01(-697px, -132px);
+  width: 17px;
+  height: 17px;
+
+  &:hover {
+    background-position: -697px -110px;
+  }
+}
+
+.ic-title {
+  @include bg-02(-495px, -412px);
+  display: inline-block;
+  width: 41px;
+  height: 16px;
+}
+
+.btn-check-square {
+  @include bg-01(-450px, -691px);
+  width: 12px;
+  height: 12px;
+
+  &:checked {
+    background-position: -535px -691px;
+  }
+}

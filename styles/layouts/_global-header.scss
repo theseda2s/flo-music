@@ -1,0 +1,37 @@
+.global-header {
+  margin-top: 30px;
+
+  &__wrapper {
+    @include flexbox(start);
+  }
+
+  &__logo {
+    margin-right: 10px;
+
+    a {
+      display: block;
+    }
+  }
+
+  &__image {
+    display: block;
+    width: auto;
+    height: 25px;
+  }
+
+  .nav {
+    &__list {
+      @include flexbox(start);
+    }
+
+    &__item {
+      @include text-style(16, $black);
+      padding: 0 20px;
+      transition: opacity 200ms ease-in-out;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}

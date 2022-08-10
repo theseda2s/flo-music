@@ -5,6 +5,20 @@
   height: 25px;
 }
 
+.ic-checked {
+  @include setTag(-194px, -516px);
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+}
+
+.ic-plus {
+  @include setIcon(-303px, -663px);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
 .btn__play {
   @include setIcon(-119px, -208px);
   width: 54px;

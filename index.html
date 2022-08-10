@@ -14,210 +14,215 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="global-header">
       <div class="container">
         <div class="row">
           <div class="col-sm-4">
-            <h1 class="header__logo">
-              <a href="/">
-                <img
-                  class="header__image"
-                  src="./assets/icon/logo.svg"
-                  alt="플로"
+            <div class="global-header__wrapper">
+              <h1 class="global-header__logo">
+                <a href="/">
+                  <img
+                    class="global-header__image"
+                    src="./assets/icon/logo.svg"
+                    alt="플로"
+                  />
+                </a>
+              </h1>
+
+              <nav class="nav">
+                <h2 class="hidden">메뉴</h2>
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a class="nav__link" href="/">둘러보기</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="/">보관함</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="/">이용권</a>
+                  </li>
+                </ul>
+              </nav>
+
+              <fieldset class="search">
+                <legend>FLO 검색</legend>
+                <i class="ic-search" aria-hidden></i>
+                <input
+                  class="search__input"
+                  type="text"
+                  placeholder="검색어를 입력하세요"
                 />
-              </a>
-            </h1>
+                <section class="search__suggestion">
+                  <h2 class="search__suggestion-title">급상승 키워드</h2>
+                  <ol class="rise-keyword">
+                    <li class="rise-keyword__item">
+                      <a href="/">
+                        <em class="rank">1</em>
+                        <span class="word">비 오는 날 듣기 좋은 노래</span>
+                      </a>
+                    </li>
+                    <li class="rise-keyword__item">
+                      <a href="/">
+                        <em class="rank">2</em>
+                        <span class="word">아이유</span>
+                      </a>
+                    </li>
+                    <li class="rise-keyword__item">
+                      <a href="/">
+                        <em class="rank">3</em>
+                        <span class="word">소녀시대</span>
+                      </a>
+                    </li>
+                    <li class="rise-keyword__item">
+                      <a href="/">
+                        <em class="rank">4</em>
+                        <span class="word">아이브</span>
+                      </a>
+                    </li>
+                    <li class="rise-keyword__item">
+                      <a href="/">
+                        <em class="rank">5</em>
+                        <span class="word">에스파</span>
+                      </a>
+                    </li>
+                    <li class="rise-keyword__item">
+                      <a href="/">
+                        <em class="rank">6</em>
+                        <span class="word">이상한 변호사 우영우 OST</span>
+                      </a>
+                    </li>
+                    <li class="rise-keyword__item">
+                      <a href="/">
+                        <em class="rank">7</em>
+                        <span class="word">블랙핑크</span>
+                      </a>
+                    </li>
+                    <li class="rise-keyword__item">
+                      <a href="/">
+                        <em class="rank">8</em>
+                        <span class="word">볼빨간 사춘기</span>
+                      </a>
+                    </li>
+                    <li class="rise-keyword__item">
+                      <a href="/">
+                        <em class="rank">9</em>
+                        <span class="word">낮에 듣기 좋은 음악</span>
+                      </a>
+                    </li>
+                    <li class="rise-keyword__item">
+                      <a href="/">
+                        <em class="rank">10</em>
+                        <span class="word">태연</span>
+                      </a>
+                    </li>
+                  </ol>
+                </section>
+              </fieldset>
 
-            <nav class="nav">
-              <h2 class="hidden">메뉴</h2>
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a class="nav__link" href="/">둘러보기</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="/">보관함</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="/">이용권</a>
-                </li>
-              </ul>
-            </nav>
+              <!-- 로그인 하지 않은 경우 -->
+              <div class="sub-nav">
+                <ul cass="sub-nav__list">
+                  <li class="sub-nav__item">
+                    <a class="sub-nav__link" href="/">크리에이터 스튜디오</a>
+                  </li>
+                  <li class="sub-nav__item">
+                    <a class="sub-nav__link" href="/">로그인</a>
+                  </li>
+                  <li class="sub-nav__item">
+                    <a class="sub-nav__link" href="/">회원가입</a>
+                  </li>
+                </ul>
+              </div>
 
-            <fieldset class="search">
-              <legend>FLO 검색</legend>
-              <i class="ic-search" aria-hidden></i>
-              <input
-                class="search__input"
-                type="text"
-                placeholder="검색어를 입력하세요"
-              />
-              <section class="search__suggestion">
-                <h2 class="search__suggestion-title">급상승 키워드</h2>
-                <ol class="rise-keyword">
-                  <li class="rise-keyword__item">
-                    <a href="/">
-                      <em class="rank">1</em>
-                      <span class="word">비 오는 날 듣기 좋은 노래</span>
-                    </a>
+              <!--로그인 한 경우-->
+              <div class="sub-nav">
+                <ul class="sub-nav__list">
+                  <li class="sub-nav__item">
+                    <a href="/">크리에이터 스튜디오</a>
                   </li>
-                  <li class="rise-keyword__item">
-                    <a href="/">
-                      <em class="rank">2</em>
-                      <span class="word">아이유</span>
-                    </a>
-                  </li>
-                  <li class="rise-keyword__item">
-                    <a href="/">
-                      <em class="rank">3</em>
-                      <span class="word">소녀시대</span>
-                    </a>
-                  </li>
-                  <li class="rise-keyword__item">
-                    <a href="/">
-                      <em class="rank">4</em>
-                      <span class="word">아이브</span>
-                    </a>
-                  </li>
-                  <li class="rise-keyword__item">
-                    <a href="/">
-                      <em class="rank">5</em>
-                      <span class="word">에스파</span>
-                    </a>
-                  </li>
-                  <li class="rise-keyword__item">
-                    <a href="/">
-                      <em class="rank">6</em>
-                      <span class="word">이상한 변호사 우영우 OST</span>
-                    </a>
-                  </li>
-                  <li class="rise-keyword__item">
-                    <a href="/">
-                      <em class="rank">7</em>
-                      <span class="word">블랙핑크</span>
-                    </a>
-                  </li>
-                  <li class="rise-keyword__item">
-                    <a href="/">
-                      <em class="rank">8</em>
-                      <span class="word">볼빨간 사춘기</span>
-                    </a>
-                  </li>
-                  <li class="rise-keyword__item">
-                    <a href="/">
-                      <em class="rank">9</em>
-                      <span class="word">낮에 듣기 좋은 음악</span>
-                    </a>
-                  </li>
-                  <li class="rise-keyword__item">
-                    <a href="/">
-                      <em class="rank">10</em>
-                      <span class="word">태연</span>
-                    </a>
-                  </li>
-                </ol>
-              </section>
-            </fieldset>
-
-            <!-- 로그인 하지 않은 경우 -->
-            <div class="sub-nav">
-              <ul cass="sub-nav__list">
-                <li class="sub-nav__item">
-                  <a class="sub-nav__link" href="/">크리에이터 스튜디오</a>
-                </li>
-                <li class="sub-nav__item">
-                  <a class="sub-nav__link" href="/">로그인</a>
-                </li>
-                <li class="sub-nav__item">
-                  <a class="sub-nav__link" href="/">회원가입</a>
-                </li>
-              </ul>
-            </div>
-
-            <!--로그인 한 경우-->
-            <div class="sub-nav">
-              <ul class="sub-nav__list">
-                <li class="sub-nav__item">
-                  <a href="/">크리에이터 스튜디오</a>
-                </li>
-                <li class="sub-nav__item">
-                  <div class="user-character">
-                    <button class="user-character__button">
-                      <span class="user-character__name">데이</span>
-                      <img
-                        class="user-character__thumbnail"
-                        src="./assets/images/user-default-image.png"
-                        alt="데이"
-                      />
-                    </button>
-                    <div class="user-character__info">
-                      <ul class="user-character__list">
-                        <li class="user-character__item">
-                          <button class="character" type="button">
-                            <div class="character__thumbnail">
-                              <img
-                                src="./assets/images/user-default-image.png"
-                                alt="데이 캐릭터"
-                              />
-                              <i
-                                class="ic-checked"
-                                aria-label="캐릭터 선택"
-                              ></i>
-                            </div>
-                            <div class="character__info">
-                              <strong class="playlist-title">데이</strong>
-                              <span class="taste-text"
-                                >취향을 선택해주세요</span
-                              >
-                            </div>
-                          </button>
-                          <button class="user-character__setting" type="button">
-                            관리
-                          </button>
-                        </li>
-
-                        <li class="user-character__item">
-                          <button type="button">
-                            <div
-                              class="character__thumbnail character__thumbnail--new"
-                            >
-                              <i
-                                class="ic-plus"
-                                aria-label="캐릭터 추가하기 버튼"
-                              ></i>
-                            </div>
-                            <span class="playlist-add-text"
-                              >캐릭터 추가하기</span
-                            >
-                          </button>
-                        </li>
-                      </ul>
-                      <div class="user-character__info">
-                        <div class="info">
-                          <a class="info__setting" href="/">
-                            정보 관리 <i class="ic-link" aria-hidden></i
-                          ></a>
-                          <dl>
-                            <dt class="hidden">로그인 계정</dt>
-                            <dd>thesed2s12@gmail.com</dd>
-                          </dl>
-                        </div>
-                        <div class="info">
-                          <a class="info__setting" href="/"
-                            >이용권 관리 <i class="ic-link" aria-hidden></i
-                          ></a>
-                          <dl>
-                            <dt class="hidden">이용 정보</dt>
-                            <dd>사용중이 이용권이 없습니다</dd>
-                          </dl>
-                        </div>
-                      </div>
-                      <button class="user-character__logout" type="button">
-                        로그아웃
+                  <li class="sub-nav__item">
+                    <div class="user-character">
+                      <button class="user-character__button">
+                        <span class="user-character__name">데이</span>
+                        <img
+                          class="user-character__thumbnail"
+                          src="./assets/images/user-default-image.png"
+                          alt="데이"
+                        />
                       </button>
+                      <div class="user-character__info">
+                        <ul class="user-character__list">
+                          <li class="user-character__item">
+                            <button class="character" type="button">
+                              <div class="character__thumbnail">
+                                <img
+                                  src="./assets/images/user-default-image.png"
+                                  alt="데이 캐릭터"
+                                />
+                                <i
+                                  class="ic-checked"
+                                  aria-label="캐릭터 선택"
+                                ></i>
+                              </div>
+                              <div class="character__info">
+                                <strong class="playlist-title">데이</strong>
+                                <span class="taste-text"
+                                  >취향을 선택해주세요</span
+                                >
+                              </div>
+                            </button>
+                            <button
+                              class="user-character__setting"
+                              type="button"
+                            >
+                              관리
+                            </button>
+                          </li>
+
+                          <li class="user-character__item">
+                            <button type="button">
+                              <div
+                                class="character__thumbnail character__thumbnail--new"
+                              >
+                                <i
+                                  class="ic-plus"
+                                  aria-label="캐릭터 추가하기 버튼"
+                                ></i>
+                              </div>
+                              <span class="playlist-add-text"
+                                >캐릭터 추가하기</span
+                              >
+                            </button>
+                          </li>
+                        </ul>
+                        <div class="user-character__info">
+                          <div class="info">
+                            <a class="info__setting" href="/">
+                              정보 관리 <i class="ic-link" aria-hidden></i
+                            ></a>
+                            <dl>
+                              <dt class="hidden">로그인 계정</dt>
+                              <dd>thesed2s12@gmail.com</dd>
+                            </dl>
+                          </div>
+                          <div class="info">
+                            <a class="info__setting" href="/"
+                              >이용권 관리 <i class="ic-link" aria-hidden></i
+                            ></a>
+                            <dl>
+                              <dt class="hidden">이용 정보</dt>
+                              <dd>사용중이 이용권이 없습니다</dd>
+                            </dl>
+                          </div>
+                        </div>
+                        <button class="user-character__logout" type="button">
+                          로그아웃
+                        </button>
+                      </div>
                     </div>
-                  </div>
-                </li>
-              </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

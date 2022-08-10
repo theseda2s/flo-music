@@ -28,3 +28,31 @@
   font-size: $font-size-28;
   line-height: $line-height-28;
 }
+
+@mixin text-style($size, $color: false) {
+  @if ($size == 12) {
+    @include text-style-12;
+  }
+  @if ($size == 13) {
+    @include text-style-13;
+  }
+  @if ($size == 14) {
+    @include text-style-14;
+  }
+  @if ($size == 15) {
+    @include text-style-15;
+  }
+  @if ($size == 16) {
+    @include text-style-16;
+  }
+  @if ($size == 22) {
+    @include text-style-22;
+  }
+  @if ($size == 28) {
+    @include text-style-28;
+  }
+
+  @if (type-of($color) color) {
+    color: $color;
+  }
+}

@@ -5,12 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FLO | 지금 당신의 음악, 플로</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -45,13 +39,16 @@
               </nav>
 
               <fieldset class="search">
-                <legend>FLO 검색</legend>
+                <legend class="hidden">FLO 검색</legend>
                 <i class="ic-search" aria-hidden></i>
                 <input
                   class="search__input"
                   type="text"
-                  placeholder="검색어를 입력하세요"
+                  placeholder="검색어를 입력하세요."
                 />
+                <button class="search__delete" type="button">
+                  <i class="ic-delete-input" aria-hidden></i>
+                </button>
                 <section class="search__suggestion">
                   <h2 class="search__suggestion-title">급상승 키워드</h2>
                   <ol class="rise-keyword">

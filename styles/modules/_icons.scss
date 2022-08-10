@@ -12,6 +12,13 @@
   height: 17px;
 }
 
+.ic-delete-input {
+  @include setIcon(-697px, -440px);
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+
 .ic-plus {
   @include setIcon(-303px, -663px);
   display: inline-block;

@@ -1,0 +1,9 @@
+@mixin setIcon($x, $y) {
+  background-image: url('../assets/icon/icons-01.png');
+  background-position: $x $y;
+}
+
+@mixin setTag($x, $y) {
+  background-image: url('../assets/icon/icons-02.png');
+  background-position: $x $y;
+}

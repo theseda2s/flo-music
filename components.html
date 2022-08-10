@@ -14,28 +14,33 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <span class="ic-search" type="button"></span>
-    <button class="btn-play-type-1" type="button"></button>
-    <button class="btn-paging-arrow prev" type="button"></button>
-    <button class="btn-paging-arrow next" type="button"></button>
+    <i class="ic-search" aria-hidden></i>
+    <!-- carousel -->
+    <section class="recommend-section">
+      <button class="btn__play" type="button"></button>
+      <button class="btn__arrow btn__arrow--prev" type="button"></button>
+      <button class="btn__arrow btn__arrow--next" type="button"></button>
+    </section>
 
-    <button class="btn-swiper prev" type="button"></button>
-    <button class="btn-swiper next" type="button"></button>
+    <button class="btn__swiper btn__swiper--prev" type="button"></button>
+    <button class="btn__swiper btn__swiper--next" type="button"></button>
 
-    <button class="album-item__thumbnail__play" type="button"></button>
+    <button class="btn__thumbnail-play" type="button"></button>
 
-    <span class="ic-link"></span>
+    <i class="ic-link" aria-hidden></i>
 
     <!--album detail page-->
-    <button class="btn-add-list" type="button"></button>
-    <button class="btn-add-playlist" type="button"></button>
-    <button class="btn-like" type="button"></button>
-    <button class="btn-listen" type="button"></button>
-    <button class="btn-more" type="button"></button>
+    <div class="album-detail">
+      <button class="album-detail__add-list" type="button"></button>
+      <button class="album-detail__add-playlist" type="button"></button>
+      <button class="album-detail__like" type="button"></button>
+      <button class="album-detail__listen" type="button"></button>
+      <button class="album-detail__more" type="button"></button>
+    </div>
 
-    <button class="btn-allplay" type="button"></button>
-    <span class="ic-title"></span>
+    <button class="btn__allplay" type="button"></button>
+    <i class="tag-title" aria-hidden></i>
 
-    <button class="btn-check-square" type="button"></button>
+    <button class="btn__check-square" type="button"></button>
   </body>
 </html>

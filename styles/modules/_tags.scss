@@ -1,9 +1,4 @@
-@mixin setTag($x, $y) {
-  background-image: url('../assets/icon/icons-02.png');
-  background-position: $x $y;
-}
-
-.ic-title {
+.tag-title {
   @include setTag(-495px, -412px);
   display: inline-block;
   width: 41px;

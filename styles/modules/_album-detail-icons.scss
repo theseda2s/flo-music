@@ -1,17 +1,26 @@
-.btn-add-playlist {
-  @include setIcon(-368px, -380px);
+.album-detail > button {
   width: 41px;
   height: 41px;
+}
+
+.album-detail__add-list {
+  @include setIcon(-467px, -230px);
+
+  &:hover {
+    background-position: -467px -184px;
+  }
+}
+
+.album-detail__add-playlist {
+  @include setIcon(-368px, -380px);
 
   &:hover {
     background-position: -322px -380px;
   }
 }
 
-.btn-like {
+.album-detail__like {
   @include setIcon(-421px, -138px);
-  width: 41px;
-  height: 41px;
 
   &.active {
     background-position: -421px -230px;
@@ -22,27 +31,23 @@
   }
 }
 
-.btn-listen {
+.album-detail__listen {
   @include setIcon(-467px, -92px);
-  width: 41px;
-  height: 41px;
 
   &:hover {
     background-position: -467px -46px;
   }
 }
 
-.btn-more {
+.album-detail__more {
   @include setIcon(-184px, -380px);
-  width: 41px;
-  height: 41px;
 
   &:hover {
     background-position: -138px -380px;
   }
 }
 
-.btn-allplay {
+.btn__allplay {
   @include setIcon(-697px, -132px);
   width: 17px;
   height: 17px;
@@ -52,7 +57,7 @@
   }
 }
 
-.btn-check-square {
+.album-btn__check-square {
   @include setIcon(-450px, -691px);
   width: 12px;
   height: 12px;

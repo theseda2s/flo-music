@@ -3,6 +3,7 @@
 @import './constants/breakpoints';
 
 @import './base/normalize';
+@import './base/font';
 @import './base/reset';
 @import './base/globals';
 
@@ -16,5 +17,6 @@
 @import './modules/album-detail-icons';
 @import './modules/tags';
 
+@import './components/search';
 @import './layouts/grid';
 @import './layouts/global-header';

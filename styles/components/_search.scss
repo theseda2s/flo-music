@@ -1,0 +1,68 @@
+.search {
+  @include flexbox(start);
+  position: relative;
+  height: 32px;
+  padding: 0 30px 0 10px;
+  border: 1px solid $border;
+  border-radius: 18px;
+
+  &__input {
+    @include text-style(13, $black);
+    width: 150px;
+  }
+
+  &__delete {
+    @include pos-center-y;
+    top: 52%;
+    right: 10px;
+    display: none;
+
+    &.is-active {
+      display: block;
+    }
+  }
+
+  &__suggestion {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: none;
+    width: 350px;
+    padding: 0 15px;
+    background-color: $white;
+    border-radius: 5px;
+    box-shadow: 0 4px 20px 0 rgba($black, 0.1);
+
+    &-title {
+      @include text-style(12);
+      margin-top: 25px;
+    }
+
+    .rise-keyword {
+      margin: 15px 0;
+
+      &__item {
+        @include column-flexbox(center, start);
+        height: 40px;
+        transition: background-color 100ms ease-in-out;
+
+        &:hover {
+          background-color: $background;
+        }
+
+        a {
+          @include text-style(13);
+
+          .rank {
+            margin-right: 5px;
+            font-style: normal;
+          }
+        }
+      }
+    }
+
+    &.is-active {
+      display: block;
+    }
+  }
+}

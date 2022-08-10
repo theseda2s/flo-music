@@ -20,6 +20,8 @@
   }
 
   .nav {
+    margin-right: 15px;
+
     &__list {
       @include flexbox(start);
     }

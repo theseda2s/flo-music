@@ -2,11 +2,15 @@
   margin-top: 30px;
 
   &__wrapper {
+    @include flexbox(between);
+  }
+
+  &__left {
     @include flexbox(start);
   }
 
   &__logo {
-    margin-right: 10px;
+    margin-right: 25px;
 
     a {
       display: block;
@@ -20,15 +24,22 @@
   }
 
   .nav {
-    margin-right: 15px;
+    margin-right: 30px;
 
     &__list {
       @include flexbox(start);
     }
 
     &__item {
+      margin-right: 25px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__link {
       @include text-style(16, $black);
-      padding: 0 20px;
       transition: opacity 200ms ease-in-out;
 
       &:hover {

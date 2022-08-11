@@ -26,6 +26,13 @@
   height: 20px;
 }
 
+.ic-setting {
+  @include setIcon(-362px, -691px);
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+}
+
 .btn__play {
   @include setIcon(-119px, -208px);
   width: 54px;

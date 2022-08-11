@@ -34,7 +34,7 @@
     padding: 0 15px;
     background-color: $white;
     border-radius: 5px;
-    box-shadow: 0 4px 20px 0 rgba($black, 0.1);
+    box-shadow: $popup-shadow;
 
     &-title {
       @include text-style(12);

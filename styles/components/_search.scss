@@ -8,12 +8,15 @@
 
   &__input {
     @include text-style(13, $black);
+    position: relative;
+    top: 1px;
     width: 150px;
+    height: 16px;
   }
 
   &__delete {
     @include pos-center-y;
-    top: 52%;
+    top: 58%;
     right: 10px;
     display: none;
 

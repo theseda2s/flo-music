@@ -19,6 +19,9 @@ function openSearchSuggestion() {
   if (!searchSuggestion.classList.contains('is-active')) {
     window.addEventListener('click', closeSearchSuggestionOnClickingOutside)
   }
+  if (this.value) {
+    return
+  }
   searchSuggestion.classList.add('is-active')
   deleteBtn.classList.remove('is-active')
 }

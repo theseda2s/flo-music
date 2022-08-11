@@ -1,6 +1,8 @@
 @import './constants/colors';
 @import './constants/typography';
 @import './constants/breakpoints';
+@import './constants/box-shadow';
+@import './constants/z-indexes';
 
 @import './base/normalize';
 @import './base/font';
@@ -18,5 +20,8 @@
 @import './modules/tags';
 
 @import './components/search';
+@import './components/sub-nav';
+@import './components/user-character';
+
 @import './layouts/grid';
 @import './layouts/global-header';

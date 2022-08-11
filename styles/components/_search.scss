@@ -55,6 +55,8 @@
 
         a {
           @include text-style(13);
+          @include truncate;
+          width: 300px;
 
           .rank {
             margin-right: 5px;

@@ -1,0 +1,23 @@
+.sub-nav {
+  &__list {
+    @include flexbox(start);
+    padding: 30px;
+  }
+
+  &__item {
+    margin-right: 25px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    @include text-style(13, $secondary);
+    transition: opacity 200ms ease-in-out;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}

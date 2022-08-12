@@ -1,39 +1,40 @@
 .ic-search {
   @include setIcon(-242px, -632px);
-  display: inline-block;
   width: 25px;
   height: 25px;
 }
 
 .ic-checked {
   @include setTag(-194px, -516px);
-  display: inline-block;
   width: 17px;
   height: 17px;
 }
 
 .ic-delete-input {
   @include setIcon(-697px, -440px);
-  display: inline-block;
   width: 16px;
   height: 16px;
 }
 
 .ic-plus {
   @include setIcon(-303px, -663px);
-  display: inline-block;
   width: 20px;
   height: 20px;
 }
 
 .ic-setting {
   @include setIcon(-362px, -691px);
-  display: inline-block;
   width: 13px;
   height: 13px;
 }
 
-.btn__play {
+.ic-arrow {
+  @include setIcon(-632px, -612px);
+  width: 28px;
+  height: 20px;
+}
+
+.ic-play-circle {
   @include setIcon(-119px, -208px);
   width: 54px;
   height: 54px;
@@ -43,34 +44,30 @@
   }
 }
 
-.btn__arrow {
+.ic-prev-lg {
+  @include setIcon(-248px, -60px);
   width: 55px;
   height: 55px;
-}
-
-.btn__arrow--prev {
-  @include setIcon(-248px, -60px);
 
   &:hover {
     background-position: -248px 0;
   }
 }
 
-.btn__arrow--next {
+.ic-next-lg {
   @include setIcon(0, -208px);
+  width: 55px;
+  height: 55px;
 
   &:hover {
     background-position: -248px -120px;
   }
 }
 
-.btn__swiper {
+.ic-prev-sm {
+  @include setIcon(-126px, -636px);
   width: 16px;
   height: 16px;
-}
-
-.btn__swiper--prev {
-  @include setIcon(-126px, -636px);
 
   &:hover {
     background-position: -96px -636px;
@@ -81,8 +78,10 @@
   }
 }
 
-.btn__swiper--next {
+.ic-next-sm {
   @include setIcon(-215px, -636px);
+  width: 16px;
+  height: 16px;
 
   &:hover {
     background-position: -185px -636px;
@@ -93,7 +92,7 @@
   }
 }
 
-.btn__thumbnail-play {
+.ic-play-thumbnail {
   @include setIcon(-178px, -105px);
   width: 32px;
   height: 32px;
@@ -105,7 +104,6 @@
 
 .ic-link {
   @include setIcon(-100px, -693px);
-  display: inline-block;
   width: 12px;
   height: 12px;
 }

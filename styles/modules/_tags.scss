@@ -1,6 +1,17 @@
+.tag-new {
+  @include setTag(-157px, -485px);
+  width: 28px;
+  height: 13px;
+}
+
+.tag-up {
+  @include setTag(-31px, -485px);
+  width: 26px;
+  height: 26px;
+}
+
 .tag-title {
   @include setTag(-495px, -412px);
-  display: inline-block;
   width: 41px;
   height: 16px;
 }

@@ -1,26 +1,27 @@
-.album-detail > button {
+.ic-add-list {
+  @include setIcon(-467px, -230px);
   width: 41px;
   height: 41px;
-}
-
-.album-detail__add-list {
-  @include setIcon(-467px, -230px);
 
   &:hover {
     background-position: -467px -184px;
   }
 }
 
-.album-detail__add-playlist {
+.ic-playlist {
   @include setIcon(-368px, -380px);
+  width: 41px;
+  height: 41px;
 
   &:hover {
     background-position: -322px -380px;
   }
 }
 
-.album-detail__like {
+.ic-like {
   @include setIcon(-421px, -138px);
+  width: 41px;
+  height: 41px;
 
   &.active {
     background-position: -421px -230px;
@@ -31,23 +32,27 @@
   }
 }
 
-.album-detail__listen {
+.ic-listen {
   @include setIcon(-467px, -92px);
+  width: 41px;
+  height: 41px;
 
   &:hover {
     background-position: -467px -46px;
   }
 }
 
-.album-detail__more {
+.ic-more {
   @include setIcon(-184px, -380px);
+  width: 41px;
+  height: 41px;
 
   &:hover {
     background-position: -138px -380px;
   }
 }
 
-.btn__allplay {
+.ic-allplay {
   @include setIcon(-697px, -132px);
   width: 17px;
   height: 17px;
@@ -57,7 +62,7 @@
   }
 }
 
-.album-btn__check-square {
+.ic-check-square {
   @include setIcon(-450px, -691px);
   width: 12px;
   height: 12px;

@@ -1,0 +1,54 @@
+.playlist-carousel {
+  &__slider {
+    position: relative;
+  }
+
+  &__controls {
+    @include pos-center;
+    @include flexbox(between);
+    width: 115%;
+
+    .control-button {
+      &[disabled] {
+        visibility: hidden;
+      }
+    }
+  }
+
+  .slider {
+    &__item--album-release {
+      position: relative;
+
+      .detail-card {
+        background-color: $purple;
+
+        &__header {
+          padding: 50px 25px;
+          margin-right: 100px;
+          background-color: $purple-dark;
+        }
+
+        &__title {
+          @include text-style(16);
+          margin-bottom: 15px;
+        }
+
+        &__info {
+          @include text-style(28);
+          font-weight: 700;
+        }
+
+        &__button {
+          position: relative;
+          top: 30px;
+          right: -12px;
+        }
+
+        &__play-button {
+          right: 40px;
+          bottom: 40px;
+        }
+      }
+    }
+  }
+}

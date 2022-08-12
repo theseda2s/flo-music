@@ -1,4 +1,6 @@
 .global-header {
+  margin: 30px 0;
+
   &__wrapper {
     @include flexbox(between);
   }

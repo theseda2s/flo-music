@@ -5,7 +5,7 @@ $header-margin: 30px;
 
   &__wrapper {
     @include flexbox(between);
-    margin: 0 -#{$header-margin};
+    margin: 0 -#{($header-margin)*2};
   }
 
   &__left {

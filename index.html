@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header class="global-header">
+    <header class="flo-header">
       <div class="container">
         <div class="row">
           <div class="col-sm-4">
-            <div class="global-header__wrapper">
-              <div class="global-header__left">
-                <h1 class="global-header__logo">
+            <div class="flo-header__wrapper">
+              <div class="flo-header__left">
+                <h1 class="flo-header__logo">
                   <a href="/">
                     <img
-                      class="global-header__image"
+                      class="flo-header__image"
                       src="./assets/icon/logo.svg"
                       alt="플로"
                     />
@@ -118,7 +118,7 @@
                 </fieldset>
               </div>
 
-              <div class="global-header__right">
+              <div class="flo-header__right">
                 <!-- 로그인 하지 않은 경우 -->
                 <!-- <div class="sub-nav">
                   <ul class="sub-nav__list">
@@ -134,7 +134,7 @@
                   </ul>
                 </div> -->
 
-                <!--로그인 한 경우-->
+                <!--로그인을 했을 경우-->
                 <div class="sub-nav">
                   <ul class="sub-nav__list">
                     <li class="sub-nav__item">
@@ -230,6 +230,686 @@
         </div>
       </div>
     </header>
+
+    <main class="flo-home">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <section class="recommend-section">
+              <header class="recommend-section__header">
+                <h1 class="hidden">개인별 추천 목록</h1>
+              </header>
+              <div class="recommend-section__content">
+                <div class="playlist-carousel" role="region">
+                  <div class="playlist-carousel__slider">
+                    <ol class="slider__list">
+                      <li
+                        class="slider__item slider__item--album-release"
+                        role="tabpanel"
+                        aria-labelledby="playlist-carousel-tab-1"
+                      >
+                        <a
+                          title="나만듣는앨범소식 상세보기"
+                          class="detail-card"
+                          href="/"
+                        >
+                          <div class="detail-card__header">
+                            <h2 class="detail-card__title">나만듣는앨범소식</h2>
+                            <p class="detail-card__info">
+                              뉴진스 <br />
+                              데뷔 앨범 <br />
+                              'New Jeans'
+
+                              <button
+                                class="detail-card__button"
+                                type="button"
+                                aria-label="앨범 상세보기"
+                              >
+                                <i class="ic-arrow" aria-hidden></i>
+                              </button>
+                            </p>
+                          </div>
+                          <div class="detail-card__content">
+                            <ol class="detail-card__list">
+                              <li class="detail-card__item">
+                                <div class="album-info">
+                                  <figure class="album-info__thumbnail">
+                                    <img
+                                      class="album-info__image"
+                                      src="./assets/images/my-album-release-01.jpg"
+                                      alt=""
+                                    />
+                                    <figcaption class="hidden">
+                                      NewJeans 1st EP 'New Jeans' 앨범 이미지
+                                    </figcaption>
+                                  </figure>
+                                  <dl class="album-info__detail">
+                                    <dt class="album-info__artist">NewJeans</dt>
+                                    <dd class="album-info__title">Attention</dd>
+                                  </dl>
+                                </div>
+                              </li>
+                              <li class="detail-card__item">
+                                <div class="album-info">
+                                  <figure class="album-info__thumbnail">
+                                    <img
+                                      class="album-info__image"
+                                      src="./assets/images/my-album-release-01.jpg"
+                                      alt=""
+                                    />
+                                    <figcaption class="hidden">
+                                      NewJeans 1st EP 'New Jeans' 앨범 이미지
+                                    </figcaption>
+                                  </figure>
+                                  <dl class="album-info__detail">
+                                    <dt class="album-info__artist">NewJeans</dt>
+                                    <dd class="album-info__title">Hype Boy</dd>
+                                  </dl>
+                                </div>
+                              </li>
+                              <li class="detail-card__item">
+                                <div class="album-info">
+                                  <figure class="album-info__thumbnail">
+                                    <img
+                                      class="album-info__image"
+                                      src="./assets/images/my-album-release-01.jpg"
+                                      alt=""
+                                    />
+                                    <figcaption class="hidden">
+                                      NewJeans 1st EP 'New Jeans' 앨범 이미지
+                                    </figcaption>
+                                  </figure>
+                                  <dl class="album-info__detail">
+                                    <dt class="album-info__artist">NewJeans</dt>
+                                    <dd class="album-info__title">Cookie</dd>
+                                  </dl>
+                                </div>
+                              </li>
+                              <li class="detail-card__item">
+                                <div class="album-info">
+                                  <figure class="album-info__thumbnail">
+                                    <img
+                                      class="album-info__image"
+                                      src="./assets/images/my-album-release-01.jpg"
+                                      alt=""
+                                    />
+                                    <figcaption class="hidden">
+                                      NewJeans 1st EP 'New Jeans' 앨범 이미지
+                                    </figcaption>
+                                  </figure>
+                                  <dl class="album-info__detail">
+                                    <dt class="album-info__artist">NewJeans</dt>
+                                    <dd class="album-info__title">Hurt</dd>
+                                  </dl>
+                                </div>
+                              </li>
+                            </ol>
+                          </div>
+                        </a>
+                        <button
+                          title="나만듣는앨범소식 전체듣기"
+                          class="detail-card__play-button"
+                          type="button"
+                        >
+                          <i class="ic-play-circle"></i>
+                        </button>
+                      </li>
+
+                      <li
+                        class="slider__item slider__item--today"
+                        role="tabpanel"
+                        aria-labelledby="playlist-carousel-tab-1"
+                      >
+                        <a
+                          title="오늘의 추천 상세보기"
+                          class="detail-card"
+                          href="/"
+                        >
+                          <div class="detail-card__header">
+                            <h2 class="detail-card__title">오늘의 추천</h2>
+                            <p class="detail-card__info">
+                              요즘 들은 곡과 <br />
+                              비슷한 음악
+                            </p>
+
+                            <div class="detail-card__data">
+                              총 30곡
+                              <span class="bar_normal">|</span>
+                              2022.08.01
+                              <i class="tag-new" aria-hidden></i>
+                            </div>
+                          </div>
+                          <div class="detail-card__content">
+                            <ol class="detail-card__list">
+                              <li class="detail-card__item">
+                                <div class="thumb-box">
+                                  <figure class="thumb-box__thumbanail">
+                                    <img
+                                      class="thumb-box__image"
+                                      src="./assets/images/my-similar-recommendation-image-01.jpg"
+                                      alt=""
+                                    />
+                                    <figcaption class="hidden">
+                                      Happy 앨범 이미지
+                                    </figcaption>
+                                  </figure>
+                                  <figure class="thumb-box__thumbanail">
+                                    <img
+                                      class="thumb-box__image"
+                                      src="./assets/images/my-similar-recommendation-image-02.jpg"
+                                      alt=""
+                                    />
+                                    <figcaption class="hidden">
+                                      callback 앨범 이미지
+                                    </figcaption>
+                                  </figure>
+                                  <figure class="thumb-box__thumbanail">
+                                    <img
+                                      class="thumb-box__image"
+                                      src="./assets/images/my-similar-recommendation-image-03.jpg"
+                                      alt=""
+                                    />
+                                    <figcaption class="hidden">
+                                      My Voice - The 1st Album Deluxe Edition
+                                      앨범 이미지
+                                    </figcaption>
+                                  </figure>
+                                </div>
+                              </li>
+                            </ol>
+                          </div>
+                        </a>
+                        <button
+                          title="오늘의 추천 전체듣기"
+                          class="detail-card__play-button"
+                          type="button"
+                        >
+                          <i class="ic-play-circle"></i>
+                        </button>
+                      </li>
+
+                      <li
+                        class="slider__item slider__item--new"
+                        role="tabpanel"
+                        aria-labelledby="playlist-carousel-tab-2"
+                      >
+                        <a
+                          title="나를 위한 새로운 발견 상세보기"
+                          class="detail-card"
+                          href="/"
+                        >
+                          <div class="detail-card__header">
+                            <h2 class="detail-card__title">
+                              나를 위한 새로운 발견
+                            </h2>
+                            <p class="detail-card__info">
+                              국내 <br />
+                              발라드 <br />
+                              추천 음악
+                            </p>
+                            <div class="detail-card__data">
+                              총 50곡
+                              <span class="bar_normal">|</span>
+                              2022.08.01
+                              <i class="tag-new" aria-hidden></i>
+                            </div>
+                          </div>
+                          <div class="detail-card__content">
+                            <ul class="detail-card__list">
+                              <li class="detail-card__item">
+                                <div class="album-info">
+                                  <figure class="album-info__thumbnail">
+                                    <img
+                                      class="album-info__image"
+                                      src="./assets/images/my-recommendation-image-01.jpg"
+                                      alt=""
+                                    />
+                                    <figcaption class="hidden">
+                                      Purpose - The 2nd Album 앨범 이미지
+                                    </figcaption>
+                                  </figure>
+                                  <dl class="album-info__detail">
+                                    <dt class="album-info__artist">
+                                      태연(TAEYEON)
+                                    </dt>
+                                    <dd class="album-info__title">Gravity</dd>
+                                  </dl>
+                                </div>
+                              </li>
+                              <li class="detail-card__item">
+                                <div class="album-info">
+                                  <figure class="album-info__thumbnail">
+                                    <img
+                                      class="album-info__image"
+                                      src="./assets/images/my-recommendation-image-02.jpg"
+                                      alt=""
+                                    />
+                                    <figcaption class="hidden">
+                                      사계 (Four Seasons) 앨범 이미지
+                                    </figcaption>
+                                  </figure>
+                                  <dl class="album-info__detail">
+                                    <dt class="album-info__artist">
+                                      태연(TAEYEON)
+                                    </dt>
+                                    <dd class="album-info__title">Blue</dd>
+                                  </dl>
+                                </div>
+                              </li>
+                              <li class="detail-card__item">
+                                <div class="album-info">
+                                  <figure class="album-info__thumbnail">
+                                    <img
+                                      class="album-info__image"
+                                      src="./assets/images/my-recommendation-image-03.jpg"
+                                      alt=""
+                                    />
+                                    <figcaption class="hidden">
+                                      우리의 방식 앨범 이미지
+                                    </figcaption>
+                                  </figure>
+                                  <dl class="album-info__detail">
+                                    <dt class="album-info__artist">권진아</dt>
+                                    <dd class="album-info__title">
+                                      우리의 방식
+                                    </dd>
+                                  </dl>
+                                </div>
+                              </li>
+                              <li class="detail-card__item">
+                                <div class="album-info">
+                                  <figure class="album-info__thumbnail">
+                                    <img
+                                      class="album-info__image"
+                                      src="./assets/images/my-recommendation-image-04.jpg"
+                                      alt=""
+                                    />
+                                    <figcaption class="hidden">
+                                      항해 앨범 이미지
+                                    </figcaption>
+                                  </figure>
+                                  <dl class="album-info__detail">
+                                    <dt class="album-info__artist">
+                                      AKMU (악뮤)
+                                    </dt>
+                                    <dd class="album-info__title">
+                                      어떻게 이별까지 사랑하겠어, 널 사랑하는
+                                      거지
+                                    </dd>
+                                  </dl>
+                                </div>
+                              </li>
+                            </ul>
+                            <ul class="detail-card__list">
+                              <li class="detail-card__item">
+                                <div class="album-info">
+                                  <figure class="album-info__thumbnail">
+                                    <img
+                                      class="album-info__image"
+                                      src="./assets/images/my-recommendation-image-05.jpg"
+                                      alt=""
+                                    />
+                                    <figcaption class="hidden">
+                                      Perfect Velvet - The 2nd Album 앨범 이미지
+                                    </figcaption>
+                                  </figure>
+                                  <dl class="album-info__detail">
+                                    <dt class="album-info__artist">
+                                      Red Velvet (레드벨벳)
+                                    </dt>
+                                    <dd class="album-info__title">
+                                      달빛 소리 (Moonlight Melody)
+                                    </dd>
+                                  </dl>
+                                </div>
+                              </li>
+                              <li class="detail-card__item">
+                                <div class="album-info">
+                                  <figure class="album-info__thumbnail">
+                                    <img
+                                      class="album-info__image"
+                                      src="./assets/images/my-recommendation-image-06.jpg"
+                                      alt=""
+                                    />
+                                    <figcaption class="hidden">
+                                      느린 우체통 앨범 이미지
+                                    </figcaption>
+                                  </figure>
+                                  <dl class="album-info__detail">
+                                    <dt class="album-info__artist">윤하</dt>
+                                    <dd class="album-info__title">
+                                      느린 우체통
+                                    </dd>
+                                  </dl>
+                                </div>
+                              </li>
+                              <li class="detail-card__item">
+                                <div class="album-info">
+                                  <figure class="album-info__thumbnail">
+                                    <img
+                                      class="album-info__image"
+                                      src="./assets/images/my-recommendation-image-07.jpg"
+                                      alt=""
+                                    />
+                                    <figcaption class="hidden">
+                                      조선로코 - 녹두전 (KBS2 월화드라마) OST -
+                                      Part.2 앨범 이미지
+                                    </figcaption>
+                                  </figure>
+                                  <dl class="album-info__detail">
+                                    <dt class="album-info__artist">윤하</dt>
+                                    <dd class="album-info__title">
+                                      빛이 되어줄게
+                                    </dd>
+                                  </dl>
+                                </div>
+                              </li>
+                              <li class="detail-card__item">
+                                <div class="album-info">
+                                  <figure class="album-info__thumbnail">
+                                    <img
+                                      class="album-info__image"
+                                      src="./assets/images/my-recommendation-image-08.jpg"
+                                      alt=""
+                                    />
+                                    <figcaption class="hidden">
+                                      안녕, 나의 우주 앨범 이미지
+                                    </figcaption>
+                                  </figure>
+                                  <dl class="album-info__detail">
+                                    <dt class="album-info__artist">정승환</dt>
+                                    <dd class="album-info__title">우주선</dd>
+                                  </dl>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </a>
+                        <button
+                          title="나를 위한 새로운 발견 전체듣기"
+                          class="detail-card__play-button"
+                          type="button"
+                        >
+                          <i class="ic-play-circle"></i>
+                        </button>
+                      </li>
+
+                      <li
+                        class="slider__item slider__item--new"
+                        role="tabpanel"
+                        aria-labelledby="playlist-carousel-tab-2"
+                      >
+                        <a
+                          title="나를 위한 새로운 발견 상세보기"
+                          class="detail-card"
+                          href="/"
+                        >
+                          <div class="detail-card__header">
+                            <h2 class="detail-card__title">
+                              나를 위한 새로운 발견
+                            </h2>
+                            <p class="detail-card__info">
+                              해외 팝 <br />
+                              추천 음악
+                            </p>
+                            <div class="detail-card__data">
+                              총 곡
+                              <span class="bar_normal">|</span>
+                              2022.07.28
+                            </div>
+                          </div>
+                          <div class="detail-card__content">
+                            <ul class="detail-card__list">
+                              <li class="detail-card__item">
+                                <div class="album-info">
+                                  <figure class="album-info__thumbnail">
+                                    <img
+                                      class="album-info__image"
+                                      src="./assets/images/my-pop-recommendation-image-01.jpg"
+                                      alt=""
+                                    />
+                                    <figcaption class="hidden">
+                                      Snacks (Supersize) 앨범 이미지
+                                    </figcaption>
+                                  </figure>
+                                  <dl class="album-info__detail">
+                                    <dt class="album-info__artist">
+                                      Jax Jones
+                                    </dt>
+                                    <dd class="album-info__title">Harder</dd>
+                                  </dl>
+                                </div>
+                              </li>
+                              <li class="detail-card__item">
+                                <div class="album-info">
+                                  <figure class="album-info__thumbnail">
+                                    <img
+                                      class="album-info__image"
+                                      src="./assets/images/my-pop-recommendation-image-02.jpg"
+                                      alt=""
+                                    />
+                                    <figcaption class="hidden">
+                                      MIA 앨범 이미지
+                                    </figcaption>
+                                  </figure>
+                                  <dl class="album-info__detail">
+                                    <dt class="album-info__artist">
+                                      Life Of Dillon
+                                    </dt>
+                                    <dd class="album-info__title">
+                                      American Girl
+                                    </dd>
+                                  </dl>
+                                </div>
+                              </li>
+                              <li class="detail-card__item">
+                                <div class="album-info">
+                                  <figure class="album-info__thumbnail">
+                                    <img
+                                      class="album-info__image"
+                                      src="./assets/images/my-pop-recommendation-image-03.jpg"
+                                      alt=""
+                                    />
+                                    <figcaption class="hidden">
+                                      Happiness Begins 이미지
+                                    </figcaption>
+                                  </figure>
+                                  <dl class="album-info__detail">
+                                    <dt class="album-info__artist">
+                                      Jonas Brothers
+                                    </dt>
+                                    <dd class="album-info__title">
+                                      Happy When I'm Sad
+                                    </dd>
+                                  </dl>
+                                </div>
+                              </li>
+                              <li class="detail-card__item">
+                                <div class="album-info">
+                                  <figure class="album-info__thumbnail">
+                                    <img
+                                      class="album-info__image"
+                                      src="./assets/images/my-pop-recommendation-image-04.jpg"
+                                      alt=""
+                                    />
+                                    <figcaption class="hidden">
+                                      Betty 앨범 이미지
+                                    </figcaption>
+                                  </figure>
+                                  <dl class="album-info__detail">
+                                    <dt class="album-info__artist">
+                                      Betty Who
+                                    </dt>
+                                    <dd class="album-info__title">Whisper</dd>
+                                  </dl>
+                                </div>
+                              </li>
+                            </ul>
+                            <ul class="detail-card__list">
+                              <li class="detail-card__item">
+                                <div class="album-info">
+                                  <figure class="album-info__thumbnail">
+                                    <img
+                                      class="album-info__image"
+                                      src="./assets/images/my-pop-recommendation-image-05.jpg"
+                                      alt=""
+                                    />
+                                    <figcaption class="hidden">
+                                      Bring It Back 앨범 이미지
+                                    </figcaption>
+                                  </figure>
+                                  <dl class="album-info__detail">
+                                    <dt class="album-info__artist">
+                                      Shy Carter
+                                    </dt>
+                                    <dd class="album-info__title">
+                                      Bring It Back
+                                    </dd>
+                                  </dl>
+                                </div>
+                              </li>
+                              <li class="detail-card__item">
+                                <div class="album-info">
+                                  <figure class="album-info__thumbnail">
+                                    <img
+                                      class="album-info__image"
+                                      src="./assets/images/my-pop-recommendation-image-06.jpg"
+                                      alt=""
+                                    />
+                                    <figcaption class="hidden">
+                                      Just Dance 이미지
+                                    </figcaption>
+                                  </figure>
+                                  <dl class="album-info__detail">
+                                    <dt class="album-info__artist">HONNE</dt>
+                                    <dd class="album-info__title">
+                                      Just Dance
+                                    </dd>
+                                  </dl>
+                                </div>
+                              </li>
+                              <li class="detail-card__item">
+                                <div class="album-info">
+                                  <figure class="album-info__thumbnail">
+                                    <img
+                                      class="album-info__image"
+                                      src="./assets/images/my-pop-recommendation-image-07.jpg"
+                                      alt=""
+                                    />
+                                    <figcaption class="hidden">
+                                      Warm On A Cold Night (Deluxe) 앨범 이미지
+                                    </figcaption>
+                                  </figure>
+                                  <dl class="album-info__detail">
+                                    <dt class="album-info__artist">HONNE</dt>
+                                    <dd class="album-info__title">
+                                      Someone That Loves You
+                                    </dd>
+                                  </dl>
+                                </div>
+                              </li>
+                              <li class="detail-card__item">
+                                <div class="album-info">
+                                  <figure class="album-info__thumbnail">
+                                    <img
+                                      class="album-info__image"
+                                      src="./assets/images/my-pop-recommendation-image-08.jpg"
+                                      alt=""
+                                    />
+                                    <figcaption class="hidden">
+                                      Hello 앨범 이미지
+                                    </figcaption>
+                                  </figure>
+                                  <dl class="album-info__detail">
+                                    <dt class="album-info__artist">Karmin</dt>
+                                    <dd class="album-info__title">
+                                      Brokenhearted
+                                    </dd>
+                                  </dl>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </a>
+                        <button
+                          title="나를 위한 새로운 발견 전체듣기"
+                          class="detail-card__play-button"
+                          type="button"
+                        >
+                          <i class="ic-play-circle"></i>
+                        </button>
+                      </li>
+                    </ol>
+
+                    <div class="playlist-carousel__controls">
+                      <button
+                        title="이전 목록"
+                        class="control-button is-prev"
+                        type="button"
+                      >
+                        <i class="ic-prev-lg" aria-hidden></i>
+                      </button>
+                      <button
+                        title="다음 목록"
+                        class="control-button is-next"
+                        type="button"
+                      >
+                        <i class="ic-next-lg" aria-hidden></i>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="playlist-carousel__thumbnail">
+                    <ol class="thumbnail__list" role="tablist">
+                      <li
+                        class="thumbnail__item"
+                        id="user-gallery-tab-1"
+                        role="tab"
+                      >
+                        <button
+                          class="thumbnail__button"
+                          type="button"
+                        ></button>
+                      </li>
+                      <li
+                        class="thumbnail__item"
+                        id="user-gallery-tab-2"
+                        role="tab"
+                      >
+                        <button
+                          class="thumbnail__button"
+                          type="button"
+                        ></button>
+                      </li>
+                      <li
+                        class="thumbnail__item"
+                        id="user-gallery-tab-3"
+                        role="tab"
+                      >
+                        <button
+                          class="thumbnail__button"
+                          type="button"
+                        ></button>
+                      </li>
+                      <li
+                        class="thumbnail__item"
+                        id="user-gallery-tab-4"
+                        role="tab"
+                      >
+                        <button
+                          class="thumbnail__button"
+                          type="button"
+                        ></button>
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
     <div class="overlay"></div>
     <script src="./js/search.js"></script>
     <script src="./js/user-character.js"></script>

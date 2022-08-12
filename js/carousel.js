@@ -3,7 +3,7 @@ const playlistCarousel = tns({
   slideBy: 'page',
   autoplay: false,
   controls: true,
-  controlsContainer: '.playlist-carousel__controls',
+  controlsContainer: '.playlist-carousel .playlist-carousel__controls',
   loop: false,
   navContainer: '.playlist-carousel .thumbnail__list',
   navAsThumbnails: true,

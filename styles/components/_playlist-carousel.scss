@@ -3,6 +3,57 @@
     position: relative;
   }
 
+  .slider__item {
+    position: relative;
+
+    &--album-release {
+      .detail-card {
+        @include flexbox(start);
+        background-color: #8392e2;
+
+        &__header {
+          padding: 50px 25px;
+          margin-right: 100px;
+          background-color: #677fd4;
+        }
+
+        &__content {
+          padding: 0;
+        }
+
+        &__button {
+          position: relative;
+          top: 30px;
+          right: -12px;
+        }
+
+        &__play-button {
+          left: 940px - 54px - 40px;
+        }
+      }
+    }
+
+    &--new {
+      &--dance {
+        .detail-card {
+          background-color: #3e3667;
+        }
+      }
+
+      &--ballade {
+        .detail-card {
+          background-color: #2f4575;
+        }
+      }
+
+      &--pop {
+        .detail-card {
+          background-color: #2e5b70;
+        }
+      }
+    }
+  }
+
   &__controls {
     @include pos-center;
     @include flexbox(between);
@@ -15,38 +66,35 @@
     }
   }
 
-  .slider {
-    &__item--album-release {
-      position: relative;
+  &__thumbnail {
+    width: 100%;
+    margin-top: 20px;
 
-      .detail-card {
-        background-color: $purple;
+    .thumbnail {
+      &__list {
+        @include flexbox;
+      }
 
-        &__header {
-          padding: 50px 25px;
-          margin-right: 100px;
-          background-color: $purple-dark;
+      &__item {
+        margin: 0 5px;
+
+        &.tns-nav-active {
+          .thumbnail__button {
+            background-color: $blue;
+          }
         }
+      }
 
-        &__title {
-          @include text-style(16);
-          margin-bottom: 15px;
-        }
+      &__button {
+        width: 6px;
+        height: 6px;
+        background-color: $border;
+        border-radius: 50%;
+        transition: background-color 200ms ease-in-out;
 
-        &__info {
-          @include text-style(28);
-          font-weight: 700;
-        }
-
-        &__button {
-          position: relative;
-          top: 30px;
-          right: -12px;
-        }
-
-        &__play-button {
-          right: 40px;
-          bottom: 40px;
+        &:active,
+        &:hover {
+          background-color: $blue;
         }
       }
     }

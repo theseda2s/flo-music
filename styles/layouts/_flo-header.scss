@@ -1,11 +1,17 @@
 $header-margin: 30px;
 
 .flo-header {
-  margin: $header-margin 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $header-level;
+  width: 100%;
+  padding: $header-margin 0;
+  background-color: $white;
 
   &__wrapper {
     @include flexbox(between);
-    margin: 0 -#{($header-margin)*2};
+    margin: 0 -#{($header-margin) * 2};
   }
 
   &__left {

@@ -10,3 +10,17 @@ const playlistCarousel = tns({
   mouseDrag: true,
   preventScrollOnTouch: true,
 })
+
+const todayGallery = tns({
+  container: '.today-gallery .slider__list',
+  items: 10,
+  mode: 'gallery',
+  slideBy: 'page',
+  autoplay: false,
+  controls: true,
+  controlsContainer: '.today-gallery .today-gallery__navigator',
+  loop: false,
+  navAsThumbnails: false,
+  mouseDrag: true,
+  preventScrollOnTouch: true,
+})

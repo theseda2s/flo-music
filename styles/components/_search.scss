@@ -29,6 +29,7 @@
     position: absolute;
     top: 40px;
     left: 0;
+    z-index: $search-level;
     display: none;
     width: 350px;
     padding: 0 15px;

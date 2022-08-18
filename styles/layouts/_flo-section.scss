@@ -5,6 +5,9 @@
   &__title {
     @include text-style(22);
     margin-bottom: 20px;
+  }
+
+  &--today {
     transition: color 200ms ease-in-out;
 
     &:hover {

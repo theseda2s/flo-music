@@ -11,7 +11,36 @@
     transition: color 200ms ease-in-out;
 
     &:hover {
-      color: $blue;
+      .flo-section__title {
+        color: $blue;
+      }
+    }
+  }
+
+  &--editor-pick {
+    .flo-section {
+      &__header {
+        @include flexbox(between);
+        margin-bottom: 20px;
+      }
+
+      &__title {
+        margin-bottom: 0;
+      }
+
+      &__link {
+        @include flexbox(start);
+        @include text-style(16);
+        transition: color 200ms ease-in-out;
+
+        &:hover {
+          color: $blue;
+        }
+
+        .ic-link {
+          margin-left: -2px;
+        }
+      }
     }
   }
 }

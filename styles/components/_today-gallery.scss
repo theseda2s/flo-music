@@ -6,7 +6,7 @@
   &__controls {
     @include flexbox(end, start);
     position: absolute;
-    top: -18px;
+    top: -40px;
     right: 3px;
   }
 
@@ -67,7 +67,6 @@
     &__image {
       position: relative;
       display: block;
-
       width: 175px;
       height: 175px;
       object-fit: cover;
@@ -90,6 +89,7 @@
     &__title {
       @include line-clamp(2);
       width: 175px;
+      text-overflow: ellipsis;
       transition: color 100ms ease-in-out;
 
       &:hover {

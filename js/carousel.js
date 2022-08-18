@@ -24,3 +24,30 @@ const todayGallery = tns({
   mouseDrag: true,
   preventScrollOnTouch: true,
 })
+
+const afternoonPlaylist = tns({
+  container: '.flo-section--afternoon .playlist .slider__list',
+  items: 5,
+  mode: 'gallery',
+  slideBy: 'page',
+  autoplay: false,
+  controls: true,
+  controlsContainer: '.flo-section--afternoon .playlist .playlist__controls',
+  loop: false,
+  navAsThumbnails: false,
+  mouseDrag: true,
+  preventScrollOnTouch: true,
+})
+
+const holidayPlaylist = tns({
+  container: '.flo-section--holiday .playlist .slider__list',
+  items: 5,
+  mode: 'gallery',
+  slideBy: 'page',
+  autoplay: false,
+  controls: true,
+  controlsContainer: '.flo-section--holiday .playlist .playlist__controls',
+  navAsThumbnails: false,
+  mouseDrag: true,
+  preventScrollOnTouch: true,
+})

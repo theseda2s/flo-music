@@ -51,3 +51,16 @@ const holidayPlaylist = tns({
   mouseDrag: true,
   preventScrollOnTouch: true,
 })
+
+const firstHalfGallery = tns({
+  container: '.first-half-gallery .slider__list',
+  items: 3,
+  mode: 'gallery',
+  slideBy: 'page',
+  autoplay: false,
+  controls: true,
+  controlsContainer: '.first-half-gallery .first-half__controls',
+  navAsThumbnails: false,
+  mouseDrag: true,
+  preventScrollOnTouch: true,
+})

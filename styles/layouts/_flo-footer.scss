@@ -1,0 +1,99 @@
+.flo-footer {
+  margin-bottom: 50px;
+
+  &__top {
+    @include flexbox(between);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $border;
+  }
+
+  &__list {
+    @include flexbox(start);
+  }
+
+  &__item {
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  &--nav {
+    .flo-footer__item {
+      padding-right: 20px;
+    }
+
+    .flo-footer__link {
+      @include text-style(14);
+      font-weight: 700;
+      transition: color 200ms ease-in-out;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+
+  &--social {
+    .flo-footer__item {
+      padding-right: 15px;
+    }
+  }
+
+  &--policy {
+    margin-bottom: 20px;
+
+    .flo-footer__item {
+      &:not(:last-child):after {
+        display: inline-block;
+        margin: 0 5px;
+        content: '|';
+      }
+    }
+
+    .flo-footer__link {
+      @include text-style(12);
+      transition: color 200ms ease-in-out;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+
+  &--detail {
+    margin-bottom: 40px;
+
+    .flo-footer__item {
+      @include flexbox(start);
+      @include text-style(12, $secondary);
+
+      &:not(:last-child):after {
+        display: inline-block;
+        margin: 0 5px;
+        content: '|';
+      }
+
+      dt {
+        &:not(:last-child):after {
+          display: inline-block;
+          margin: 0 3px;
+          content: ':';
+        }
+      }
+    }
+  }
+
+  &--info {
+    @include flexbox(between);
+
+    .copyright,
+    .browser-support {
+      font-size: 11px;
+    }
+
+    .copyright span {
+      margin-right: 10px;
+    }
+  }
+}

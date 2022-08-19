@@ -1,0 +1,108 @@
+.recommend-list {
+  &--circle {
+    .recommend-list__card {
+      background-color: #396164;
+
+      &-image {
+        border-radius: 50%;
+      }
+    }
+
+    .recommend-list__title {
+      padding-right: 20px;
+    }
+  }
+
+  &__slider {
+    position: relative;
+  }
+
+  &__controls {
+    position: absolute;
+    top: -40px;
+    right: 3px;
+
+    .control-button {
+      &[disabled] {
+        .ic-prev-sm {
+          background-position: -68px -636px;
+        }
+
+        .ic-next-sm {
+          background-position: -155px -636px;
+        }
+      }
+    }
+  }
+
+  &__card {
+    @include flexbox;
+    position: relative;
+    width: 450px;
+    height: 180px;
+    margin-bottom: 15px;
+    background-color: $purple;
+    border-radius: 6px;
+    transition: filter 200ms ease-in-out;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+
+    &-date {
+      @include text-style(13, $white);
+      position: absolute;
+      top: 13px;
+      right: 13px;
+    }
+
+    &-image-group {
+      @include flexbox;
+    }
+
+    &-image {
+      display: inline-block;
+      width: 120px;
+      height: 120px;
+      border-radius: 4px;
+      object-fit: cover;
+
+      &:first-child {
+        z-index: $recommend-image-level;
+        order: 2;
+        transform: scale(1.2);
+      }
+
+      &:nth-child(2) {
+        order: 1;
+        transform: translateX(20%);
+      }
+
+      &:last-child {
+        order: 3;
+        transform: translateX(-20%);
+      }
+    }
+  }
+
+  &__play-button {
+    position: absolute;
+    right: 40px;
+    bottom: 60px;
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 5px;
+    transition: color 200ms ease-in-out;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  &__artist {
+    @include text-style(13, $secondary);
+    display: block;
+  }
+}

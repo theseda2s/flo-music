@@ -19,7 +19,6 @@ const todayGallery = tns({
   autoplay: false,
   controls: true,
   controlsContainer: '.today-gallery .today-gallery__navigator',
-  loop: false,
   navAsThumbnails: false,
   mouseDrag: true,
   preventScrollOnTouch: true,
@@ -34,6 +33,32 @@ const afternoonPlaylist = tns({
   controls: true,
   controlsContainer: '.flo-section--afternoon .playlist .playlist__controls',
   loop: false,
+  navAsThumbnails: false,
+  mouseDrag: true,
+  preventScrollOnTouch: true,
+})
+
+const todayRecommendList = tns({
+  container: '.flo-section--today-recommend .slider__list',
+  items: 2,
+  mode: 'gallery',
+  slideBy: 'page',
+  autoplay: false,
+  controls: true,
+  controlsContainer: '.flo-section--today-recommend .recommend-list__controls',
+  navAsThumbnails: false,
+  mouseDrag: true,
+  preventScrollOnTouch: true,
+})
+
+const favArtistList = tns({
+  container: '.flo-section--fav-artist .slider__list',
+  items: 2,
+  mode: 'gallery',
+  slideBy: 'page',
+  autoplay: false,
+  controls: true,
+  controlsContainer: '.flo-section--fav-artist .recommend-list__controls',
   navAsThumbnails: false,
   mouseDrag: true,
   preventScrollOnTouch: true,

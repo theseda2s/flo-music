@@ -17,6 +17,12 @@
     }
   }
 
+  &--today-recommend {
+    .flo-section__title {
+      margin-bottom: 0;
+    }
+  }
+
   &--editor-pick {
     .flo-section {
       &__header {

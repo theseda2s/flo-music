@@ -1,0 +1,93 @@
+.dark-mode-button {
+  .ic-dark,
+  .ic-light {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .ic-dark {
+    background-image: url('../../assets/icon/dark-mode.png');
+  }
+
+  .ic-light {
+    background-image: url('../../assets/icon/light-mode.png');
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: $white;
+    background-color: $black;
+
+    .flo-header {
+      background-color: $black;
+
+      &__image {
+        background-image: url('../../assets/icon/logo-white.png');
+      }
+
+      .search {
+        background-color: $white;
+      }
+
+      .nav__link,
+      .user-character__name {
+        color: $white;
+      }
+
+      .search__suggestion-title,
+      .rise-keyword a,
+      .info__setting {
+        color: $primary;
+      }
+    }
+
+    .sort-button {
+      color: $white;
+    }
+
+    .today-close-button__text {
+      color: $primary;
+    }
+  }
+}
+
+.dark-mode {
+  color: $white;
+  background-color: $black;
+
+  .flo-header {
+    background-color: $black;
+
+    &__image {
+      background-image: url('../../assets/icon/logo-white.png');
+    }
+
+    .search {
+      background-color: $white;
+    }
+
+    .nav__link,
+    .user-character__name {
+      color: $white;
+    }
+
+    .search__suggestion-title,
+    .rise-keyword a,
+    .info__setting {
+      color: $primary;
+    }
+  }
+
+  .sort-button {
+    color: $white;
+  }
+
+  .today-close-button__text {
+    color: $primary;
+  }
+}

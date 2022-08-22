@@ -19,12 +19,8 @@
             <div class="flo-header__wrapper">
               <div class="flo-header__left">
                 <h1 class="flo-header__logo">
-                  <a href="/">
-                    <img
-                      class="flo-header__image"
-                      src="./assets/icon/logo.svg"
-                      alt="플로"
-                    />
+                  <a href="/" aria-label="메인 화면으로 이동">
+                    <span class="flo-header__image"></span>
                   </a>
                 </h1>
 
@@ -60,7 +56,7 @@
                       <li class="rise-keyword__item">
                         <a href="/">
                           <em class="rank">1</em>
-                          <a href="/" class="word">비 오는 날 듣기 좋은 노래</span>
+                          <span class="word">비 오는 날 듣기 좋은 노래</span>
                         </a>
                       </li>
                       <li class="rise-keyword__item">
@@ -141,6 +137,15 @@
                 <!--로그인을 했을 경우-->
                 <div class="sub-nav">
                   <ul class="sub-nav__list">
+                    <li class="sub-nav__item">
+                      <button
+                        class="dark-mode-button"
+                        type="button"
+                        aria-label="다크 모드로 전환하기"
+                      >
+                        <i class="ic-dark" aria-hidden></i>
+                      </button>
+                    </li>
                     <li class="sub-nav__item">
                       <a class="sub-nav__link" href="/">크리에이터 스튜디오</a>
                     </li>
@@ -2105,10 +2110,18 @@
                 <div class="recommend-list" role="region">
                   <div class="recommend-list__slider">
                     <div class="recommend-list__controls">
-                      <button class="control-button" type="button" aria-label="이전 목록">
+                      <button
+                        class="control-button"
+                        type="button"
+                        aria-label="이전 목록"
+                      >
                         <i class="ic-prev-sm" aria-hidden></i>
                       </button>
-                      <button class="control-button" type="button" aria-label="다음 목록">
+                      <button
+                        class="control-button"
+                        type="button"
+                        aria-label="다음 목록"
+                      >
                         <i class="ic-next-sm" aria-hidden></i>
                       </button>
                     </div>
@@ -2168,7 +2181,9 @@
                       >
                         <a href="/" aria-label="오늘의 추천 자세히 보기">
                           <div class="recommend-list__card">
-                            <span class="recommend-list__card-date"> 07.31 </span>
+                            <span class="recommend-list__card-date">
+                              07.31
+                            </span>
                             <div class="recommend-list__card-image-group">
                               <img
                                 class="recommend-list__card-image"
@@ -2176,10 +2191,10 @@
                                 alt=" ATLAS (Deluxe) 앨범 이미지"
                               />
                               <img
-                              class="recommend-list__card-image"
-                              src="./assets/images/today-recommendation-image-04.jpg"
-                              alt="Ashes 앨범 이미지"
-                            />
+                                class="recommend-list__card-image"
+                                src="./assets/images/today-recommendation-image-04.jpg"
+                                alt="Ashes 앨범 이미지"
+                              />
                               <img
                                 class="recommend-list__card-image"
                                 src="./assets/images/today-recommendation-image-06.jpg"
@@ -2191,7 +2206,7 @@
                         <button class="recommend-list__play-button">
                           <i class="ic-play-thumbnail" aria-hidden></i>
                         </button>
-                
+
                         <a
                           class="recommend-list__title"
                           href="/"
@@ -2214,14 +2229,16 @@
                       >
                         <a href="/" aria-label="오늘의 추천 자세히 보기">
                           <div class="recommend-list__card">
-                            <span class="recommend-list__card-date"> 07.30 </span>
+                            <span class="recommend-list__card-date">
+                              07.30
+                            </span>
                             <div class="recommend-list__card-image-group">
                               <img
                                 class="recommend-list__card-image"
                                 src="./assets/images/today-recommendation-image-08.jpg"
                                 alt="Odd - The 4th Album 앨범 이미지"
                               />
-                               <img
+                              <img
                                 class="recommend-list__card-image"
                                 src="./assets/images/today-recommendation-image-07.jpg"
                                 alt="BAD LOVE - The 1st Mini Album 앨범 이미지"
@@ -2259,7 +2276,9 @@
                       >
                         <a href="/" aria-label="오늘의 추천 자세히 보기">
                           <div class="recommend-list__card">
-                            <span class="recommend-list__card-date"> 07.29 </span>
+                            <span class="recommend-list__card-date">
+                              07.29
+                            </span>
                             <div class="recommend-list__card-image-group">
                               <img
                                 class="recommend-list__card-image"
@@ -2308,13 +2327,24 @@
                 <h1 class="flo-section__title">좋아할만한 아티스트 MIX</h1>
               </header>
               <div class="flo-section__content">
-                <div class="recommend-list recommend-list--circle" role="region">
+                <div
+                  class="recommend-list recommend-list--circle"
+                  role="region"
+                >
                   <div class="recommend-list__slider">
                     <div class="recommend-list__controls">
-                      <button class="control-button" type="button" aria-label="이전 목록">
+                      <button
+                        class="control-button"
+                        type="button"
+                        aria-label="이전 목록"
+                      >
                         <i class="ic-prev-sm" aria-hidden></i>
                       </button>
-                      <button class="control-button" type="button" aria-label="다음 목록">
+                      <button
+                        class="control-button"
+                        type="button"
+                        aria-label="다음 목록"
+                      >
                         <i class="ic-next-sm" aria-hidden></i>
                       </button>
                     </div>
@@ -2324,7 +2354,10 @@
                         role="tabpanel"
                         aria-labelledby="recommend-list-tab-1"
                       >
-                        <a href="/" aria-label="좋아할만한 아티스트 MIX 자세히 보기">
+                        <a
+                          href="/"
+                          aria-label="좋아할만한 아티스트 MIX 자세히 보기"
+                        >
                           <div class="recommend-list__card">
                             <span class="recommend-list__card-date">
                               07.27
@@ -2356,7 +2389,10 @@
                           href="/"
                           aria-label="좋아할만한 아티스트 음악 페이지로 이동"
                         >
-                          <span>백예린 (Yerin Baek), 구름 (Cloud), 샤이니 (SHINee), AKMU (악뮤), 태민 (TAEMIN)</span>
+                          <span
+                            >백예린 (Yerin Baek), 구름 (Cloud), 샤이니 (SHINee),
+                            AKMU (악뮤), 태민 (TAEMIN)</span
+                          >
                         </a>
                       </li>
                       <li
@@ -2364,9 +2400,14 @@
                         role="tabpanel"
                         aria-labelledby="recommend-list-tab-2"
                       >
-                        <a href="/" aria-label="좋아할만한 아티스트 MIX 자세히 보기">
+                        <a
+                          href="/"
+                          aria-label="좋아할만한 아티스트 MIX 자세히 보기"
+                        >
                           <div class="recommend-list__card">
-                            <span class="recommend-list__card-date"> 07.26 </span>
+                            <span class="recommend-list__card-date">
+                              07.26
+                            </span>
                             <div class="recommend-list__card-image-group">
                               <img
                                 class="recommend-list__card-image"
@@ -2374,10 +2415,10 @@
                                 alt="Bilie Eilish 아티스트 이미지"
                               />
                               <img
-                              class="recommend-list__card-image"
-                              src="./assets/images/artist-image-04.jpg"
-                              alt="Maroon 5 아티스트 이미지"
-                            />
+                                class="recommend-list__card-image"
+                                src="./assets/images/artist-image-04.jpg"
+                                alt="Maroon 5 아티스트 이미지"
+                              />
                               <img
                                 class="recommend-list__card-image"
                                 src="./assets/images/artist-image-06.jpeg"
@@ -2389,31 +2430,38 @@
                         <button class="recommend-list__play-button">
                           <i class="ic-play-thumbnail" aria-hidden></i>
                         </button>
-                
+
                         <a
                           class="recommend-list__title"
                           href="/"
                           aria-label="좋아할만한 아티스트 음악 페이지로 이동"
                         >
-                          <span>Bilie Eilish, Maroon 5, The 1975, Fall Out Boy, Cigarettes After Sex</span>
+                          <span
+                            >Bilie Eilish, Maroon 5, The 1975, Fall Out Boy,
+                            Cigarettes After Sex</span
+                          >
                         </a>
-                        
                       </li>
                       <li
                         class="slider__item"
                         role="tabpanel"
                         aria-labelledby="recommend-list-tab-3"
                       >
-                        <a href="/" aria-label="좋아할만한 아티스트 MIX 자세히 보기">
+                        <a
+                          href="/"
+                          aria-label="좋아할만한 아티스트 MIX 자세히 보기"
+                        >
                           <div class="recommend-list__card">
-                            <span class="recommend-list__card-date"> 07.26 </span>
+                            <span class="recommend-list__card-date">
+                              07.26
+                            </span>
                             <div class="recommend-list__card-image-group">
                               <img
                                 class="recommend-list__card-image"
                                 src="./assets/images/artist-image-08.jpg"
                                 alt="김세정 아티스트 이미지"
                               />
-                               <img
+                              <img
                                 class="recommend-list__card-image"
                                 src="./assets/images/artist-image-07.jpg"
                                 alt="Red Velvet (레드벨벳) 아티스트 이미지"
@@ -2434,7 +2482,10 @@
                           href="/"
                           aria-label="좋아할만한 아티스트 음악 페이지로 이동"
                         >
-                          <span>김세정, Red Velvet (레드벨벳), 태연 (TAEYEON), 훈스 (HOONS) </span>
+                          <span
+                            >김세정, Red Velvet (레드벨벳), 태연 (TAEYEON), 훈스
+                            (HOONS)
+                          </span>
                         </a>
                       </li>
                       <li
@@ -2442,9 +2493,14 @@
                         role="tabpanel"
                         aria-labelledby="recommend-list-tab-4"
                       >
-                        <a href="/" aria-label="좋아할만한 아티스트 MIX 자세히 보기">
+                        <a
+                          href="/"
+                          aria-label="좋아할만한 아티스트 MIX 자세히 보기"
+                        >
                           <div class="recommend-list__card">
-                            <span class="recommend-list__card-date"> 07.24 </span>
+                            <span class="recommend-list__card-date">
+                              07.24
+                            </span>
                             <div class="recommend-list__card-image-group">
                               <img
                                 class="recommend-list__card-image"
@@ -2472,7 +2528,10 @@
                           href="/"
                           aria-label="좋아할만한 아티스트 음악 페이지로 이동"
                         >
-                          <span>태연 (TAEYEON), 헤이즈 (Heize), 폴킴, 펀치 (Punch), 김세정</span>
+                          <span
+                            >태연 (TAEYEON), 헤이즈 (Heize), 폴킴, 펀치 (Punch),
+                            김세정</span
+                          >
                         </a>
                       </li>
                     </ul>
@@ -2480,7 +2539,7 @@
                 </div>
               </div>
             </section>
-            
+
             <section class="flo-section flo-section--holiday">
               <header class="flo-section__header">
                 <h1 class="flo-section__title">이번 휴가는 어디로 갈까?</h1>
@@ -2905,7 +2964,7 @@
                 </div>
               </div>
             </section>
-            
+
             <section class="flo-section flo-section--editor-pick">
               <header class="flo-section__header">
                 <h1 class="flo-section__title">Editor's Pick</h1>
@@ -3132,25 +3191,29 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="flo-footer__top">
-             <div class="flo-footer--nav">
-              <ul class="flo-footer__list">
-                <li class="flo-footer__item">
-                  <a class="flo-footer__link" href="/">FLO 소개</a>
-                </li>
-                <li class="flo-footer__item">
-                  <a class="flo-footer__link" href="/">공지사항</a>
-                </li>
-                <li class="flo-footer__item">
-                  <a class="flo-footer__link" href="/">고객센터</a>
-                </li>
-                <li class="flo-footer__item">                  
-                  <a class="flo-footer__link" href="/">FLO 플레이어 다운로드</a>
-                </li>
-                <li class="flo-footer__item">
-                  <a class="flo-footer__link" href="/">FLO 크리에이터 스튜디오</a>
-                </li>
-              </ul>
-             </div>
+              <div class="flo-footer--nav">
+                <ul class="flo-footer__list">
+                  <li class="flo-footer__item">
+                    <a class="flo-footer__link" href="/">FLO 소개</a>
+                  </li>
+                  <li class="flo-footer__item">
+                    <a class="flo-footer__link" href="/">공지사항</a>
+                  </li>
+                  <li class="flo-footer__item">
+                    <a class="flo-footer__link" href="/">고객센터</a>
+                  </li>
+                  <li class="flo-footer__item">
+                    <a class="flo-footer__link" href="/"
+                      >FLO 플레이어 다운로드</a
+                    >
+                  </li>
+                  <li class="flo-footer__item">
+                    <a class="flo-footer__link" href="/"
+                      >FLO 크리에이터 스튜디오</a
+                    >
+                  </li>
+                </ul>
+              </div>
 
               <div class="flo-footer--social">
                 <ul class="flo-footer__list">
@@ -3161,7 +3224,10 @@
                   </li>
                   <li class="flo-footer__item">
                     <a class="flo-footer__link" href="/">
-                      <i class="ic-instagram" aria-label="instagram 바로가기"></i>
+                      <i
+                        class="ic-instagram"
+                        aria-label="instagram 바로가기"
+                      ></i>
                     </a>
                   </li>
                   <li class="flo-footer__item">
@@ -3178,74 +3244,86 @@
               </div>
             </div>
 
-           <div class="flo-footer__bottom">
-            <div class="flo-footer--policy">
-              <ul class="flo-footer__list">
-                <li class="flo-footer__item">
-                  <a class="flo-footer__link" href="/">회사소개</a>
-                </li>
-                <li class="flo-footer__item">
-                  <a class="flo-footer__link" href="/">이용약관</a>
-                </li>
-                <li class="flo-footer__item">
-                  <a class="flo-footer__link" href="/"><strong>개인정보 처리방침</strong></a>
-                </li>
-                <li class="flo-footer__item">
-                  <a class="flo-footer__link" href="/">청소년 보호정책</a>
-                </li>
-                <li class="flo-footer__item">
-                  <a class="flo-footer__link" href="/">사업자정보 확인</a>
-                </li>
-              </ul>
-            </div>
+            <div class="flo-footer__bottom">
+              <div class="flo-footer--policy">
+                <ul class="flo-footer__list">
+                  <li class="flo-footer__item">
+                    <a class="flo-footer__link" href="/">회사소개</a>
+                  </li>
+                  <li class="flo-footer__item">
+                    <a class="flo-footer__link" href="/">이용약관</a>
+                  </li>
+                  <li class="flo-footer__item">
+                    <a class="flo-footer__link" href="/"
+                      ><strong>개인정보 처리방침</strong></a
+                    >
+                  </li>
+                  <li class="flo-footer__item">
+                    <a class="flo-footer__link" href="/">청소년 보호정책</a>
+                  </li>
+                  <li class="flo-footer__item">
+                    <a class="flo-footer__link" href="/">사업자정보 확인</a>
+                  </li>
+                </ul>
+              </div>
 
-            <div class="flo-footer--detail">
-              <dl class="flo-footer__list">
-                <div class="flo-footer__item">
-                  <dt>대표이사</dt>
-                  <dd>김데이</dd>
-                </div>
-                <div class="flo-footer__item">
-                  <dt>이메일</dt>
-                  <dd>
-                    <address>thesed2s12@gamil.com</address>
-                  </dd>
-                </div>
-                <div class="flo-footer__item">
-                  <dt>사업자 등록번호</dt>
-                  <dd>123-45-67890</dd>
-                </div>
-                <div class="flo-footer__item">
-                  <dt>통신판매업 신고번호</dt>
-                  <dd>1234-00-5678</dd>
-                </div>
-              </dl>
-            </div>
+              <div class="flo-footer--detail">
+                <dl class="flo-footer__list">
+                  <div class="flo-footer__item">
+                    <dt>대표이사</dt>
+                    <dd>김데이</dd>
+                  </div>
+                  <div class="flo-footer__item">
+                    <dt>이메일</dt>
+                    <dd>
+                      <address>thesed2s12@gamil.com</address>
+                    </dd>
+                  </div>
+                  <div class="flo-footer__item">
+                    <dt>사업자 등록번호</dt>
+                    <dd>123-45-67890</dd>
+                  </div>
+                  <div class="flo-footer__item">
+                    <dt>통신판매업 신고번호</dt>
+                    <dd>1234-00-5678</dd>
+                  </div>
+                </dl>
+              </div>
 
-            <div class="flo-footer--info">
-              <p class="copyright">
-                <span>(주)드림어스컴퍼니</span>
-                ALL RIGHTS RESERVED
-              </p>
-              
-              <span class="browser-support">
-                본 사이트는 Chrome 및 Microsoft Edge 브라우저에서 사용 가능합니다. 
-              </span>
+              <div class="flo-footer--info">
+                <p class="copyright">
+                  <span>(주)드림어스컴퍼니</span>
+                  ALL RIGHTS RESERVED
+                </p>
+
+                <span class="browser-support">
+                  본 사이트는 Chrome 및 Microsoft Edge 브라우저에서 사용
+                  가능합니다.
+                </span>
+              </div>
             </div>
-           </div>
           </div>
         </div>
       </div>
     </footer>
 
-    <aside class="voucher-modal is-active">
+    <aside class="voucher-modal">
       <div class="voucher-modal__content">
-        <a href='/' aria-label="이용권 프로모션 페이지로 이동">
-          <img class="voucher-modal__image" src="./assets/images/popup-image-01.png" alt="부담없이 다시 시작하는 무제한 듣기 이미지">
+        <a href="/" aria-label="이용권 프로모션 페이지로 이동">
+          <img
+            class="voucher-modal__image"
+            src="./assets/images/popup-image-01.png"
+            alt="부담없이 다시 시작하는 무제한 듣기 이미지"
+          />
         </a>
       </div>
       <div class="voucher-modal__button">
-        <input type="checkbox" name="checkbox" id="today-close-button" class="voucher-modal__checkbox">
+        <input
+          type="checkbox"
+          name="checkbox"
+          id="today-close-button"
+          class="voucher-modal__checkbox"
+        />
         <label for="today-close-button" class="today-close-button">
           <i class="ic-check" aria-hidden></i>
           <span class="today-close-button__text">24시간 다시보지않기</span>
@@ -3253,11 +3331,12 @@
         <button class="close-button" type="button">닫기</button>
       </div>
     </aside>
-    <div class="overlay is-active"></div>
+    <div class="overlay"></div>
     <script src="./js/search.js"></script>
     <script src="./js/user-character.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="./js/carousel.js"></script>
     <script src="./js/voucher-modal.js"></script>
+    <script src="./js/dark-mode.js"></script>
   </body>
 </html>

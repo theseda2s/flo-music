@@ -100,6 +100,16 @@
   height: 12px;
 }
 
+.ic-check {
+  @include setIcon(-594px, -661px);
+  width: 16px;
+  height: 16px;
+
+  &:hover {
+    @include setIcon(-572px, -661px);
+  }
+}
+
 .ic-facebook,
 .ic-instagram,
 .ic-youtube,

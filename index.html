@@ -3331,6 +3331,148 @@
         <button class="close-button" type="button">닫기</button>
       </div>
     </aside>
+
+    <aside class="playlist">
+      <div class="playlist__header">
+        <div class="playlist__header-top">
+          <h3 class="playlist__title">재생목록</h3>
+          <button
+            class="playlist__btn--edit"
+            type="button"
+            aria-label="재생환경 설정"
+          >
+            <i class="ic-playlist-edit" aria-hidden></i>
+          </button>
+          <button
+            class="playlist__btn--close"
+            type="button"
+            aria-label="재생목록 닫기"
+          >
+            <i class="ic-playlist-close" aria-hidden></i>
+          </button>
+        </div>
+
+        <div class="playlist__header-bottom">
+          <ul class="playlist__util-list">
+            <li class="playlist__util-item">
+              <button class="playlist__util-button" type="button">
+                <i class="ic-search-sm" aria-hidden></i>
+                검색
+              </button>
+            </li>
+            <li class="playlist__util-item">
+              <button class="playlist__util-button" type="button">
+                <i class="ic-mylist" aria-hidden></i>
+                내 리스트 가져오기
+              </button>
+            </li>
+          </ul>
+          <ul class="playlist__edit-list">
+            <li class="playlist__edit-item">
+              <button class="playlist__edit-button" type="button">편집</button>
+            </li>
+            <li class="playlist__edit-item">
+              <button class="playlist__edit-button" type="button">
+                그룹접기
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="playlist__content">
+        <em>재생목록에 담긴 곡/클립이 없습니다.</em>
+      </div>
+    </aside>
+
+    <aside class="player">
+      <div class="player__track">
+        <span class="player__track-thumbnail"></span>
+        <div class="player__track-info">
+          <span
+            >재생목록이 <br />
+            비어있습니다</span
+          >
+        </div>
+      </div>
+
+      <div class="player__controller">
+        <div class="player__playtime">
+          <input
+            class="player__progress"
+            type="range"
+            min="0"
+            max="100"
+            title="재생 시간 조절 바"
+            role="slider"
+          />
+          <span class="time-current">
+            <span class="hidden">현재 재생된 시간</span>
+            00:00
+          </span>
+          <span class="time-all">
+            <span class="hidden">전체 재생 시간</span>
+            04:09
+          </span>
+        </div>
+
+        <div class="player__control">
+          <button
+            class="player__btn--repeat"
+            type="button"
+            role="button"
+            title="Enable repeat"
+          >
+            <i class="ic-player-repeat" aria-hidden></i>
+          </button>
+          <button
+            class="player__btn--previous"
+            type="button"
+            role="button"
+            title="Previous"
+          >
+            <i class="ic-player-prev" aria-hidden></i>
+          </button>
+          <button
+            class="player__btn--play"
+            type="button"
+            role="button"
+            title="Play"
+          >
+            <i class="ic-player-play" aria-hidden></i>
+          </button>
+          <button
+            class="player__btn--next"
+            type="button"
+            role="button"
+            title="Next"
+          >
+            <i class="ic-player-next" aria-hidden></i>
+          </button>
+          <button
+            class="player__btn--shuffle"
+            type="button"
+            role="button"
+            title="Enable shuffle"
+          >
+            <i class="ic-player-shuffle" aria-hidden></i>
+          </button>
+        </div>
+
+        <div class="player__util">
+          <button class="player__btn--like" type="button" role="button">
+            <i class="ic-like" aria-hidden></i>
+          </button>
+          <button class="player__btn--volume" type="button" role="button">
+            <i class="ic-volume" aria-hidden></i>
+          </button>
+          <button class="player__btn--open-list" type="button" role="button">
+            <i class="ic-open-list" aria-hidden></i>
+          </button>
+        </div>
+      </div>
+    </aside>
+
     <div class="overlay"></div>
     <script src="./js/search.js"></script>
     <script src="./js/user-character.js"></script>

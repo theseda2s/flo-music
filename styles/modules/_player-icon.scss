@@ -1,0 +1,237 @@
+.ic-player-close {
+  @include setIcon(-135px, -472px);
+  width: 40px;
+  height: 40px;
+
+  &:hover {
+    background-position: -180px -472px;
+  }
+}
+
+.ic-player-repeat {
+  @include setIcon(-168px, -324px);
+  width: 51px;
+  height: 51px;
+
+  &:hover {
+    background-position: -224px -324px;
+  }
+}
+
+.ic-player-repeat-active {
+  @include setIcon(-280px, -324px);
+  width: 51px;
+  height: 51px;
+
+  &:hover {
+    background-position: -336px -324px;
+  }
+}
+
+.ic-player-repeat1 {
+  @include setIcon(-56px, -324px);
+  width: 51px;
+  height: 51px;
+
+  &:hover {
+    background-position: -112px -324px;
+  }
+}
+
+.ic-player-prev {
+  @include setIcon(-365px, 0);
+  width: 51px;
+  height: 51px;
+
+  &:hover {
+    background-position: -365px -56px;
+  }
+}
+
+.ic-player-next {
+  @include setIcon(-308px, -114px);
+  width: 51px;
+  height: 51px;
+
+  &:hover {
+    background-position: -308px -170px;
+  }
+}
+
+.ic-player-play {
+  @include setIcon(-112px, -268px);
+  width: 51px;
+  height: 51px;
+
+  &:hover {
+    background-position: -168px -268px;
+  }
+}
+
+.ic-player-pause {
+  @include setIcon(0, -268px);
+  width: 51px;
+  height: 51px;
+
+  &:hover {
+    background-position: -56px -268px;
+  }
+}
+
+.ic-player-shuffle {
+  @include setIcon(-365px, -112px);
+  width: 51px;
+  height: 51px;
+
+  &:hover {
+    background-position: -365px -168px;
+  }
+}
+
+.ic-player-shuffle-active {
+  @include setIcon(-365px, -224px);
+  width: 51px;
+  height: 51px;
+
+  &:hover {
+    background-position: 0 -324px;
+  }
+}
+
+.ic-volume {
+  @include setIcon(-445px, -558px);
+  width: 31px;
+  height: 31px;
+
+  &:hover {
+    background-position: -481px -558px;
+  }
+}
+
+.ic-volume-active {
+  @include setIcon(-517px, -558px);
+  width: 31px;
+  height: 31px;
+}
+
+.ic-volume-mute {
+  @include setIcon(-301px, -558px);
+  width: 31px;
+  height: 31px;
+}
+
+.ic-like {
+  @include setIcon(-287px, -517px);
+  width: 36px;
+  height: 36px;
+
+  &.active {
+    background-position: -369px -517px;
+  }
+
+  &:hover {
+    background-position: -328px -517px;
+  }
+}
+
+.ic-dislike {
+  @include setIcon(-205px, -517px);
+  width: 36px;
+  height: 36px;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.ic-add {
+  @include setIcon(-123px, -517px);
+  width: 36px;
+  height: 36px;
+}
+
+.ic-open-list {
+  @include setIcon(-337px, -558px);
+  width: 31px;
+  height: 31px;
+
+  &:hover {
+    background-position: -373px -558px;
+  }
+}
+
+.ic-playlist-edit {
+  @include setIcon(-632px, -210px);
+  width: 30px;
+  height: 30px;
+}
+
+.ic-playlist-close {
+  @include setIcon(-697px, -330px);
+  width: 17px;
+  height: 17px;
+
+  &:hover {
+    background-position: -697px -352px;
+  }
+}
+
+.ic-playlist {
+  @include setIcon(-248px, -180px);
+  width: 23px;
+  height: 23px;
+}
+
+.ic-mic {
+  @include setIcon(-667px, -592px);
+  width: 23px;
+  height: 23px;
+}
+
+.ic-song {
+  @include setIcon(-667px, -620px);
+  width: 23px;
+  height: 23px;
+}
+
+.ic-search-sm {
+  @include setIcon(-697px, -286px);
+  width: 17px;
+  height: 17px;
+}
+
+.ic-mylist {
+  @include setIcon(-251px, -663px);
+  width: 22px;
+  height: 22px;
+}
+
+.ic-list-listen {
+  @include setIcon(-632px, -70px);
+  width: 30px;
+  height: 30px;
+}
+
+.ic-list-listen-active {
+  @include setIcon(-632px, -105px);
+  width: 30px;
+  height: 30px;
+}
+
+.ic-list-close {
+  @include setIcon(-175px, -597px);
+  width: 30px;
+  height: 30px;
+}
+
+.ic-add-mylist {
+  @include setIcon(-350px, -597px);
+  width: 30px;
+  height: 30px;
+}
+
+.ic-playlist-more {
+  @include setIcon(-490px, -597px);
+  width: 30px;
+  height: 30px;
+}

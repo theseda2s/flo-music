@@ -1,0 +1,80 @@
+.player-playlist {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 111px;
+  z-index: $playlist-level;
+  display: none;
+  width: 650px;
+  padding: 0 40px;
+  background-color: #262626;
+
+  &.is-active {
+    display: block;
+  }
+
+  &__header {
+    margin-top: 50px;
+
+    &-top {
+      @include flexbox(start);
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    &-bottom {
+      @include flexbox(between);
+    }
+  }
+
+  &__title {
+    width: 74px;
+    font-size: 20px;
+    color: $white;
+  }
+
+  &__btn {
+    &--close {
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  &__util {
+    &-list {
+      @include flexbox(start);
+    }
+
+    &-item {
+      &:first-child {
+        padding-right: 20px;
+      }
+    }
+
+    &-button {
+      @include inline-flexbox;
+      @include text-style(14, $tertiary);
+
+      &.disabled {
+        color: #666;
+      }
+
+      i {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  &__content {
+    width: 100%;
+    margin: 150px auto;
+    text-align: center;
+
+    em {
+      display: block;
+      font-size: 17px;
+      font-style: normal;
+      color: $tertiary;
+    }
+  }
+}

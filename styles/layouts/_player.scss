@@ -1,0 +1,91 @@
+.player {
+  @include flexbox(around);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: $player-level;
+  width: 100%;
+  padding: 15px 30px;
+  background-color: $black;
+
+  &__track {
+    @include flexbox(start);
+
+    &-thumbnail {
+      display: block;
+      width: 65px;
+      height: 65px;
+      margin-right: 20px;
+      background-image: url('../../assets/icon/defalut-thumbnail.svg');
+      border-radius: 4px;
+    }
+
+    &-info {
+      @include text-style(14, $tertiary);
+    }
+  }
+
+  &__controller {
+    @include flexbox;
+    flex-direction: column-reverse;
+  }
+
+  &__playtime {
+    @include flexbox(between);
+
+    .progress-bar {
+      position: relative;
+      top: -3px;
+      order: 2;
+      width: 230px;
+      height: 4px;
+      margin: 0 10px;
+      overflow: hidden;
+      background-color: $tertiary;
+      border-radius: (4px / 2);
+
+      .active-bar {
+        width: 0;
+        height: 4px;
+        background-color: $blue;
+        border-radius: (4px / 2);
+      }
+    }
+
+    .time-current,
+    .time-all {
+      @include text-style(12);
+    }
+
+    .time-current {
+      order: 1;
+      color: $input-border;
+    }
+
+    .time-all {
+      order: 3;
+      color: $secondary;
+    }
+  }
+
+  &__control {
+    margin-bottom: 20px;
+  }
+
+  &__util {
+    @include flexbox;
+  }
+
+  &__btn {
+    padding: 0 10px;
+
+    &--like.disabled {
+      .ic-like {
+        width: 31px;
+        height: 31px;
+        background-position: -193px -558px;
+      }
+    }
+  }
+
+}

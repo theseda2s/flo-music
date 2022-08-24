@@ -389,49 +389,49 @@ address {
 
 .ic-search {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -242px -632px;
   width: 25px;
   height: 25px; }
 
 .ic-checked {
   display: inline-block;
-  background-image: url("../assets/icon/icons-02.png");
+  background-image: url("./assets/icon/icons-02.png");
   background-position: -194px -516px;
   width: 17px;
   height: 17px; }
 
 .ic-delete-input {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -697px -440px;
   width: 16px;
   height: 16px; }
 
 .ic-plus {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -303px -663px;
   width: 20px;
   height: 20px; }
 
 .ic-setting {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -362px -691px;
   width: 13px;
   height: 13px; }
 
 .ic-arrow {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -632px -612px;
   width: 28px;
   height: 20px; }
 
 .ic-play-circle {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -119px -208px;
   width: 54px;
   height: 54px; }
@@ -440,7 +440,7 @@ address {
 
 .ic-prev-lg {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -248px -60px;
   width: 55px;
   height: 55px; }
@@ -449,7 +449,7 @@ address {
 
 .ic-next-lg {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: 0 -208px;
   width: 55px;
   height: 55px; }
@@ -458,7 +458,7 @@ address {
 
 .ic-prev-sm {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -126px -636px;
   width: 16px;
   height: 16px; }
@@ -467,7 +467,7 @@ address {
 
 .ic-next-sm {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -215px -636px;
   width: 16px;
   height: 16px; }
@@ -476,7 +476,7 @@ address {
 
 .ic-play-thumbnail {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -178px -105px;
   width: 32px;
   height: 32px; }
@@ -485,20 +485,20 @@ address {
 
 .ic-link {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -100px -693px;
   width: 12px;
   height: 12px; }
 
 .ic-check {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -594px -661px;
   width: 16px;
   height: 16px; }
   .ic-check:hover {
     display: inline-block;
-    background-image: url("../assets/icon/icons-01.png");
+    background-image: url("./assets/icon/icons-01.png");
     background-position: -572px -661px; }
 
 .ic-facebook,
@@ -513,20 +513,20 @@ address {
   background-size: 100%; }
 
 .ic-facebook {
-  background-image: url("../assets/icon/facebook.png"); }
+  background-image: url("./assets/icon/facebook.png"); }
 
 .ic-instagram {
-  background-image: url("../assets/icon/instagram.png"); }
+  background-image: url("./assets/icon/instagram.png"); }
 
 .ic-youtube {
-  background-image: url("../assets/icon/youtube.png"); }
+  background-image: url("./assets/icon/youtube.png"); }
 
 .ic-twitter {
-  background-image: url("../assets/icon/twitter.png"); }
+  background-image: url("./assets/icon/twitter.png"); }
 
 .ic-player-close {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -135px -472px;
   width: 40px;
   height: 40px; }
@@ -535,7 +535,7 @@ address {
 
 .ic-player-repeat {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -168px -324px;
   width: 51px;
   height: 51px; }
@@ -544,7 +544,7 @@ address {
 
 .ic-player-repeat-active {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -280px -324px;
   width: 51px;
   height: 51px; }
@@ -553,7 +553,7 @@ address {
 
 .ic-player-repeat1 {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -56px -324px;
   width: 51px;
   height: 51px; }
@@ -562,7 +562,7 @@ address {
 
 .ic-player-prev {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -365px 0;
   width: 51px;
   height: 51px; }
@@ -571,7 +571,7 @@ address {
 
 .ic-player-next {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -308px -114px;
   width: 51px;
   height: 51px; }
@@ -580,7 +580,7 @@ address {
 
 .ic-player-play {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -112px -268px;
   width: 51px;
   height: 51px; }
@@ -589,7 +589,7 @@ address {
 
 .ic-player-pause {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: 0 -268px;
   width: 51px;
   height: 51px; }
@@ -598,7 +598,7 @@ address {
 
 .ic-player-shuffle {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -365px -112px;
   width: 51px;
   height: 51px; }
@@ -607,7 +607,7 @@ address {
 
 .ic-player-shuffle-active {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -365px -224px;
   width: 51px;
   height: 51px; }
@@ -616,7 +616,7 @@ address {
 
 .ic-volume {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -445px -558px;
   width: 31px;
   height: 31px; }
@@ -625,21 +625,21 @@ address {
 
 .ic-volume-active {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -517px -558px;
   width: 31px;
   height: 31px; }
 
 .ic-volume-mute {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -301px -558px;
   width: 31px;
   height: 31px; }
 
 .ic-like {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -287px -517px;
   width: 36px;
   height: 36px; }
@@ -650,7 +650,7 @@ address {
 
 .ic-dislike {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -205px -517px;
   width: 36px;
   height: 36px; }
@@ -659,14 +659,14 @@ address {
 
 .ic-add {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -123px -517px;
   width: 36px;
   height: 36px; }
 
 .ic-open-list {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -337px -558px;
   width: 31px;
   height: 31px; }
@@ -675,14 +675,14 @@ address {
 
 .ic-playlist-edit {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -632px -210px;
   width: 30px;
   height: 30px; }
 
 .ic-playlist-close {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -697px -330px;
   width: 17px;
   height: 17px; }
@@ -691,91 +691,91 @@ address {
 
 .ic-playlist {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -248px -180px;
   width: 23px;
   height: 23px; }
 
 .ic-mic {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -667px -592px;
   width: 23px;
   height: 23px; }
 
 .ic-song {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -667px -620px;
   width: 23px;
   height: 23px; }
 
 .ic-search-sm {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -697px -286px;
   width: 17px;
   height: 17px; }
 
 .ic-mylist {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -251px -663px;
   width: 22px;
   height: 22px; }
 
 .ic-list-listen {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -632px -70px;
   width: 30px;
   height: 30px; }
 
 .ic-list-listen-active {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -632px -105px;
   width: 30px;
   height: 30px; }
 
 .ic-list-close {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -175px -597px;
   width: 30px;
   height: 30px; }
 
 .ic-add-mylist {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -350px -597px;
   width: 30px;
   height: 30px; }
 
 .ic-playlist-more {
   display: inline-block;
-  background-image: url("../assets/icon/icons-01.png");
+  background-image: url("./assets/icon/icons-01.png");
   background-position: -490px -597px;
   width: 30px;
   height: 30px; }
 
 .tag-new {
   display: inline-block;
-  background-image: url("../assets/icon/icons-02.png");
+  background-image: url("./assets/icon/icons-02.png");
   background-position: -157px -485px;
   width: 28px;
   height: 13px; }
 
 .tag-up {
   display: inline-block;
-  background-image: url("../assets/icon/icons-02.png");
+  background-image: url("./assets/icon/icons-02.png");
   background-position: -31px -485px;
   width: 26px;
   height: 26px; }
 
 .tag-title {
   display: inline-block;
-  background-image: url("../assets/icon/icons-02.png");
+  background-image: url("./assets/icon/icons-02.png");
   background-position: -495px -412px;
   width: 41px;
   height: 16px; }
@@ -1648,7 +1648,7 @@ address {
     display: block;
     width: 100%;
     height: 100%;
-    background-image: url("../../assets/icon/logo.svg");
+    background-image: url("./assets/icon/logo.svg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain; }
@@ -1818,10 +1818,10 @@ address {
   background-size: contain; }
 
 .dark-mode-button .ic-dark {
-  background-image: url("../../assets/icon/dark-mode.png"); }
+  background-image: url("./assets/icon/dark-mode.png"); }
 
 .dark-mode-button .ic-light {
-  background-image: url("../../assets/icon/light-mode.png"); }
+  background-image: url("./assets/icon/light-mode.png"); }
 
 @media (prefers-color-scheme: dark) {
   body {
@@ -1830,7 +1830,7 @@ address {
     body .flo-header {
       background-color: #000; }
       body .flo-header__image {
-        background-image: url("../../assets/icon/logo-white.png"); }
+        background-image: url("./assets/icon/logo-white.png"); }
       body .flo-header .search {
         background-color: #fff; }
       body .flo-header .nav__link,
@@ -1851,7 +1851,7 @@ address {
   .dark-mode .flo-header {
     background-color: #000; }
     .dark-mode .flo-header__image {
-      background-image: url("../../assets/icon/logo-white.png"); }
+      background-image: url("./assets/icon/logo-white.png"); }
     .dark-mode .flo-header .search {
       background-color: #fff; }
     .dark-mode .flo-header .nav__link,
@@ -1886,7 +1886,7 @@ address {
       width: 65px;
       height: 65px;
       margin-right: 20px;
-      background-image: url("../../assets/icon/defalut-thumbnail.svg");
+      background-image: url("./assets/icon/defalut-thumbnail.svg");
       border-radius: 4px; }
     .player__track-info {
       font-size: 14px;

@@ -1,11 +1,11 @@
 @mixin setIcon($x, $y) {
   display: inline-block;
-  background-image: url('../assets/icon/icons-01.png');
+  background-image: url('./assets/icon/icons-01.png');
   background-position: $x $y;
 }
 
 @mixin setTag($x, $y) {
   display: inline-block;
-  background-image: url('../assets/icon/icons-02.png');
+  background-image: url('./assets/icon/icons-02.png');
   background-position: $x $y;
 }

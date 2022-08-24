@@ -10,11 +10,11 @@
   }
 
   .ic-dark {
-    background-image: url('../../assets/icon/dark-mode.png');
+    background-image: url('./assets/icon/dark-mode.png');
   }
 
   .ic-light {
-    background-image: url('../../assets/icon/light-mode.png');
+    background-image: url('./assets/icon/light-mode.png');
   }
 }
 
@@ -27,7 +27,7 @@
       background-color: $black;
 
       &__image {
-        background-image: url('../../assets/icon/logo-white.png');
+        background-image: url('./assets/icon/logo-white.png');
       }
 
       .search {
@@ -64,7 +64,7 @@
     background-color: $black;
 
     &__image {
-      background-image: url('../../assets/icon/logo-white.png');
+      background-image: url('./assets/icon/logo-white.png');
     }
 
     .search {

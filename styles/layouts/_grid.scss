@@ -1,3 +1,29 @@
+/*
+ * MOBILE (<768px) -------------------------
+ * fixture ㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍsm
+ * # of columns ㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍ4
+ * gutter ㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍ20px
+ * margin ㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍ10px
+ * container-size ㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍ100% - (5px*2)
+ *
+ * TABLET (>=768px) -------------------------
+ * fixture ㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍmd
+ * # of columns ㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍ12
+ * gutter ㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍ20px
+ * margin ㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍ30px
+ * container-size ㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍ100% - (30px*2)
+ * max-container-size ㆍㆍㆍㆍㆍㆍㆍㆍ900px
+ *
+ * DESKTOP (>=1200px) -------------------------
+ * fixture ㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍlg
+ * # of columns ㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍ12
+ * gutter ㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍ20px
+ * unit ㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍ60px
+ * margin ㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍauto
+ * container-size ㆍㆍㆍㆍㆍㆍㆍㆍㆍㆍ960px
+ * max-container-size ㆍㆍㆍㆍㆍㆍㆍㆍㆍ960px
+*/
+
 .container {
   width: 100%;
   padding: 0 $sm-margin;
@@ -18,7 +44,7 @@
     }
   }
 
-  @media screen and (min-width: $md-breakpoint) {
+  @include responsive(T) {
     max-width: $md-max-container;
     padding: 0 $md-margin;
 
@@ -29,7 +55,7 @@
     }
   }
 
-  @media screen and (min-width: $lg-breakpoint) {
+  @include responsive(D) {
     max-width: $lg-max-container;
     padding: 0;
 

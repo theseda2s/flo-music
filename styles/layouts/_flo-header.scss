@@ -11,7 +11,6 @@ $header-margin: 30px;
 
   &__wrapper {
     @include flexbox(between);
-    margin: 0 -#{($header-margin) * 2};
   }
 
   &__left {
@@ -60,6 +59,12 @@ $header-margin: 30px;
       &:hover {
         opacity: 0.5;
       }
+    }
+  }
+
+  @include responsive(D) {
+    &__wrapper {
+      margin: 0 -#{($header-margin) * 2};
     }
   }
 }
